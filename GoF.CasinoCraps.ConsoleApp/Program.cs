@@ -10,8 +10,10 @@ namespace GoF.CasinoCraps.ConsoleApp
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("casino craps started - type 'exit' to exit.");
+            Console.WriteLine();
             string line;
-            while ((line = Console.ReadLine()) != "exit")
+            while ((line = Console.ReadLine().ToLower()) != "exit")
             {
                 // Do stuff.
             }
