@@ -8,12 +8,12 @@ using System.Threading.Tasks;
 namespace GoF.CasinoCraps.Tests
 {
     [TestFixture]
-    public class Class1
+    public class Tests
     {
         [Test]
         public void Test()
         {
-            Assert.That(true);
+            
         }
     }
 }
