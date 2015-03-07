@@ -7,8 +7,8 @@
     <ProjectGuid>{D91F341C-72B7-4635-B660-BBA49C49AA14}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GoF.CasinoCraps.Console</RootNamespace>
-    <AssemblyName>GoF.CasinoCraps.Console</AssemblyName>
+    <RootNamespace>GoF.CasinoCraps.ConsoleApp</RootNamespace>
+    <AssemblyName>GoF.CasinoCraps.ConsoleApp</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

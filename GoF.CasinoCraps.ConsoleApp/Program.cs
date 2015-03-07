@@ -4,12 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GoF.CasinoCraps.Console
+namespace GoF.CasinoCraps.ConsoleApp
 {
     class Program
     {
         static void Main(string[] args)
         {
+            string line;
+            while ((line = Console.ReadLine()) != "exit")
+            {
+                // Do stuff.
+            }
         }
     }
 }
