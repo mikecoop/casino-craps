@@ -27,14 +27,5 @@ namespace GoF.CasinoCraps.Tests
             diceRoll.FirstDie.Should().BeGreaterThan(0).And.BeLessOrEqualTo(6);
             diceRoll.SecondDie.Should().BeGreaterThan(0).And.BeLessOrEqualTo(6);
         }
-
-        [Test]
-        public void Next_WhenCalled_ReturnsDiceRoll()
-        {
-            DiceRoll diceRoll = DiceRoll.Next();
-
-            diceRoll.FirstDie.Should().BeGreaterThan(0).And.BeLessOrEqualTo(6);
-            diceRoll.SecondDie.Should().BeGreaterThan(0).And.BeLessOrEqualTo(6);
-        }
     }
 }
