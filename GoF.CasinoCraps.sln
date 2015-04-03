@@ -1,13 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.31101.0
+VisualStudioVersion = 12.0.30501.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoF.CasinoCraps", "GoF.CasinoCraps\GoF.CasinoCraps.csproj", "{DF474DE0-D0EA-4CCD-A568-CA2359EFBBEF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoF.CasinoCraps.Tests", "GoF.CasinoCraps.Tests\GoF.CasinoCraps.Tests.csproj", "{FE75BF62-0A72-4B5B-BC0A-574EA0DCD53A}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoF.CasinoCraps.ConsoleApp", "GoF.CasinoCraps.ConsoleApp\GoF.CasinoCraps.ConsoleApp.csproj", "{D91F341C-72B7-4635-B660-BBA49C49AA14}"
+EndProject
+Project("{F088123C-0E9E-452A-89E6-6BA2F21D5CAC}") = "GoF.CasinoCraps.Modeling", "GoF.CasinoCraps.Modeling\GoF.CasinoCraps.Modeling.modelproj", "{969C0EC7-D087-40DF-9A79-C7C8B27E5C0F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{D91F341C-72B7-4635-B660-BBA49C49AA14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D91F341C-72B7-4635-B660-BBA49C49AA14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D91F341C-72B7-4635-B660-BBA49C49AA14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{969C0EC7-D087-40DF-9A79-C7C8B27E5C0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{969C0EC7-D087-40DF-9A79-C7C8B27E5C0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{969C0EC7-D087-40DF-9A79-C7C8B27E5C0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{969C0EC7-D087-40DF-9A79-C7C8B27E5C0F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

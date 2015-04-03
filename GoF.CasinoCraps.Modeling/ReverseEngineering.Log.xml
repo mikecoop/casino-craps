@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="file:///C:/PROGRAM FILES (X86)/MICROSOFT VISUAL STUDIO 12.0/COMMON7/IDE/EXTENSIONS/MICROSOFT/ARCHITECTURE TOOLS/EXTENSIBILITY/Logging/ReverseEngineeringLog.xslt"?>
+<Log xmlns="http://schemas.microsoft.com/VisualStudio/2010/CodeGen.RE.Log" Label="Code Generation/Text Transformation Log">
+  <MessageClass Name="Message" Label="Message" Option="Show informational messages" />
+  <MessageClass Name="Warning" Label="Warning" Option="Show warnings" />
+  <MessageClass Name="Error" Label="Error" Option="Show errors" />
+  <MessageClass Name="Property" Label="Property" Option="Show metadata" />
+  <MessageClass Name="Diagnostic" Label="Message" Option="Show diagnostic messages" />
+  <Message Timestamp="2015-04-02T18:28:47" Importance="High" Text="Reverse Engineering Started." />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '192ec74e-0195-46c3-bc9b-1ce1017d7631' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: '9583a718-ecb2-4f7f-b39a-5f9b5f72e1fc' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'b25bee19-c6dd-466f-8a69-fbb34247d102' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'b486ce7d-d425-4c78-9de9-585baff43bf9' -  (ClassifierTemplateParameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF' -  (Package)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps' -  (Package)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Medium" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Game' -  (Class)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Game::Execute' -  (Operation)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Game::Execute::command' -  (Parameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Game::Game' -  (Operation)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Game::rollNumber' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Medium" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll' -  (Class)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::DiceTotal' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::FirstDie' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::GetRandomDieValue' -  (Operation)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::Name' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::random' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::Roll' -  (Operation)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::Roll::firstDie' -  (Parameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::Roll::secondDie' -  (Parameter)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::rollNames' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll::SecondDie' -  (Property)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Medium" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName' -  (Enumeration)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::AceDeuce' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::Boxcars' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::EasyEight' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::EasyFour' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::EasySix' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::EasyTen' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::Five' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::HardEight' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::HardFour' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::HardSix' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::HardTen' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::Natural' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::Nine' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::None' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::SnakeEyes' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName::Yo' -  (EnumerationLiteral)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System' -  (Package)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Collections' -  (Package)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Collections::Generic' -  (Package)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Collections::Generic::Dictionary' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Collections::Generic::Dictionary&lt;Tuple‎&lt;Int32‎, Int32‎&gt;‎, RollName‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Random' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Tuple' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'GoF.CasinoCraps.Modeling::System::Tuple&lt;Int32‎, Int32‎&gt;' -  (Class)   (partially reverse engineered - definition not updated) " />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'Integer' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Element reverse engineered into the UML model: 'String' -  (PrimitiveType)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="Diagnostic" Text="Relationship reverse engineered into the UML model: GoF.CasinoCraps.Modeling::GoF::CasinoCraps::Roll to GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName (Association)" />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="High" Text="(3) type(s) fully reverse engineered." />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="High" Text="(5) type(s) partially reverse engineered.  These types were not included in the original selection so their full definitions are not reverse engineered.  Instead, this shallow operation has simply ensured these types exist in the UML model because they are needed in order to fully describe other elements." />
+  <Message Timestamp="2015-04-02T18:28:49" Importance="High" Text="The reverse engineering operation completed with (0) error(s), and (0) warning(s)." />
+</Log>
