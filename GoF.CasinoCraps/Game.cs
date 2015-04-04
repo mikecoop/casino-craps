@@ -18,6 +18,12 @@ namespace GoF.CasinoCraps
         {
             Contract.Requires(string.IsNullOrWhiteSpace(command) == false);
 
+            if (command == "new-game")
+            {
+                rollNumber = 0;
+                return "new game started...";
+            }
+
             string[] items = command.Split(' ');
 
             if (items[0] == "roll")

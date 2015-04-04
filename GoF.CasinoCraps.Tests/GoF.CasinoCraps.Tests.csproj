@@ -51,6 +51,7 @@
     <Compile Include="RollTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameTests.cs" />
+    <Compile Include="RoundTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

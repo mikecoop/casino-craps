@@ -48,5 +48,17 @@ namespace GoF.CasinoCraps.Tests
 
             output.Should().Be("roll #3 - [1] [6] - (7)");
         }
+
+        [Test]
+        public void Execute_NewGame_RollsAreReset()
+        {
+            game.Execute("roll");
+            game.Execute("roll");
+            
+            game.Execute("new-game");
+            string output = game.Execute("roll 1 6");
+
+            output.Should().Be("roll #1 - [1] [6] - (7)");
+        }
     }
 }
