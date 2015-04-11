@@ -1,0 +1,1401 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="514a2901-d930-4a92-afd4-ff4ce5006a61" name="LogicClassesDiagram" linkedPackageId="b5af6732-2121-4ac0-9804-328968a4e92f" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5a9fcfc6-5129-4eb1-8cc6-8439fb6dc4a1" name="Roll" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="3e2b2f1a-cbd0-4dde-b66c-6c2e363f0cb7" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll" tag="ViewCode">
+            <elementDefinition Id="79f36758-af79-4d37-b3ae-1cafa629e58b" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="d7860867-0390-4ce2-9953-a914972dd8f0" name="class" profile="CSharpProfile">
+            <elementDefinition Id="356fd9c0-70bc-4c18-ad64-4876021f1b3a" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="fc091708-133f-4e6d-838a-10e419c8b14b">
+                <propertyInstance Id="16db45dd-a059-4cc2-996b-78112c997f71" name="ClrAttributes">
+                  <elementDefinition Id="7b56bf41-2f75-453c-882b-a6243589d3ba" />
+                </propertyInstance>
+                <elementDefinition Id="966e4019-019b-4e49-b16a-efb6b277b72a" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="56e1973d-e0ea-47e8-bd8b-2fbd35adc00f">
+                <propertyInstance Id="93bfce21-d394-45fa-9191-394fadbd6e8e" name="IsPartial" value="false">
+                  <elementDefinition Id="7b18c123-1307-46ac-b3d2-962a081cf3e8" />
+                </propertyInstance>
+                <elementDefinition Id="931da791-c5ba-495a-80e8-a86e67f763dd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="bc824cec-27a6-4ed3-b97e-da72d30ecb62">
+                <propertyInstance Id="a144d906-faf2-4aa9-9528-0ad68d96a8f8" name="IsStatic" value="False">
+                  <elementDefinition Id="e627690a-0af0-4933-9ee7-68e2c84da5b1" />
+                </propertyInstance>
+                <elementDefinition Id="57c4ad69-5fa3-403e-9d0a-18f94e9dea82" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="140df910-8366-473a-9368-fca303831be8">
+                <propertyInstance Id="0768677d-71e7-411a-836f-0f6f69a8ffd2" name="IsUnsafe" value="false">
+                  <elementDefinition Id="d1d55b5a-fbe8-40d6-af9a-c6fdde299191" />
+                </propertyInstance>
+                <elementDefinition Id="77aefd82-f497-4571-8cb1-eab7b2f542fd" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="6ff519c6-7231-4f09-84ef-90a7e0775c1a">
+                <propertyInstance Id="32f3c228-90f9-4c5d-a42e-115ce65d4490" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="7799a630-c82a-483d-bbea-3ee2e4ea9451" />
+                </propertyInstance>
+                <elementDefinition Id="c9c13646-982b-4742-97d8-d8e3eaefa0aa" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="bc2cbb0a-25f1-40f6-9a75-bc4a531c40c0" />
+        <targetEnds>
+          <association Id="87212fd9-9fe6-4bb9-88c0-b2fca8c2bba0" isDerived="false" sourceEndRoleName="Roll" targetEndRoleName="Name" isLeaf="false" isAbstract="false">
+            <enumerationMoniker Id="dabe49bc-e61c-427b-9b32-20d3065d5236" LastKnownName="RollName" />
+            <description>Property Name references type RollName.</description>
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="83bab1aa-6d79-418c-9986-253cd16312ef" name="Roll" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="8d3ecb92-af64-437c-864e-0ab899c3f045" name="Lower" value="*">
+                      <elementDefinition Id="1691f23b-fea0-48fd-b39e-e92e3562d18b" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="7eda678f-e887-4943-bdc1-32fe78f43326" name="Upper" value="*">
+                      <elementDefinition Id="5c3c03d3-bda8-4ba6-9bb4-1da4e30726b2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a25cd736-e526-4768-b69d-04a8d9ddeab1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8ba28294-456e-40ad-8a05-ee9dd7ac85ae" name="Name" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="e0ff967d-b2b1-46a5-97b2-1fd7337a871b" name="Lower" value="1">
+                      <elementDefinition Id="bd61f55b-904e-45bb-af7d-522886d9416e" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="dd86e5e1-73d1-4662-b789-eb7bcf9ff861" name="Upper" value="1">
+                      <elementDefinition Id="2d15b008-1444-4e6f-b608-a56b6abd814e" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="8e7cf699-6a05-451d-84e0-092e9b78ff2a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="f4a811b9-645b-4d7c-beab-a502f33aa903" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="4c1d1d23-7762-49c4-92a2-0a85a68369ad" name="DiceTotal" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="c24bf9fb-f827-4cb1-8803-88d91e9c9cd6" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3DDiceTotal" tag="ViewCode">
+                <elementDefinition Id="77a948ca-4832-43e7-ab9b-be3e2669c096" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="2990ff6e-268d-4573-8e7f-face6d76bdfa" name="property" profile="CSharpProfile">
+                <elementDefinition Id="989bcae9-3a74-48d3-a54c-edec3d2fe1c7" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ab9c3b24-2177-4662-a2e4-ab42d4a701e7">
+                    <propertyInstance Id="f3bfc84f-2d5c-4f0b-b5b6-d2db3cff17f1" name="ClrAttributes">
+                      <elementDefinition Id="6d9ca9c8-3bd4-4b12-a54f-23fba1106bc9" />
+                    </propertyInstance>
+                    <elementDefinition Id="b4c21c96-fb67-48f0-a561-6ae793cfdeeb" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0f602cb9-fff7-4846-aedc-4c8902021805">
+                    <propertyInstance Id="c9c71f48-45f4-4f57-a957-c5b6c80dc11d" name="Get" value="public">
+                      <elementDefinition Id="fcd3eaaa-3871-43e7-9fc4-5e8c8f1970a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="2beaf00c-8e61-4c13-b260-2180e7c50d09" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="66b1c6e5-b92f-4521-9ef4-10c68bbf64f9">
+                    <propertyInstance Id="a805a9a2-f465-4a76-aa8d-a6cef3f6dc6e" name="HasBody" value="false">
+                      <elementDefinition Id="20580c51-d57f-40ad-abcb-455a82d30eab" />
+                    </propertyInstance>
+                    <elementDefinition Id="f2c62011-5a55-47ff-928f-ae5491928742" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c0beb3fb-3d6f-449a-8ad4-7a12b46e946a">
+                    <propertyInstance Id="64257ce8-034d-4a76-b526-523295c233b3" name="IsUnsafe" value="false">
+                      <elementDefinition Id="2700d8d7-190d-4b50-8a20-d6909cc6c25b" />
+                    </propertyInstance>
+                    <elementDefinition Id="647c4cdb-66b7-456e-8197-8743761b8640" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="41f9a3ce-54a0-4237-8410-5adc519e9837">
+                    <propertyInstance Id="97e55e8d-4901-45b3-a1dd-528b3157526a" name="Inheritance" value="none">
+                      <elementDefinition Id="739cf7de-58d2-4e74-8cbd-a88b5429a4e9" />
+                    </propertyInstance>
+                    <elementDefinition Id="62b9b9fa-66cc-464a-b5fa-40b0dcb6306f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="030d1195-8d85-4480-8f82-91663ab58e50">
+                    <propertyInstance Id="21ba3858-00b9-4358-a266-59ae6ff08794" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c0ca9834-8f6a-44f4-b2ea-713574388ecc" />
+                    </propertyInstance>
+                    <elementDefinition Id="9374beea-94b9-4443-86c2-4d08ac7eb5cf" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c1c156c6-ac15-479a-b80c-2ac7fae15c0a">
+                    <propertyInstance Id="8ada4c86-70a1-4412-bc50-6b560b00d287" name="Set" value="none">
+                      <elementDefinition Id="9343385d-b0e5-4213-80f6-e642b7a7c93b" />
+                    </propertyInstance>
+                    <elementDefinition Id="5592a585-a0dd-46c4-b50e-7dae2510d9c3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7d8543d3-6433-421b-8d83-cc9544e04a55" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="584f9799-2dc1-4289-a934-70a7d1fd9bfd" name="FirstDie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="5b6f5e78-2b9a-44e0-a711-0244f3016655" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3DFirstDie" tag="ViewCode">
+                <elementDefinition Id="d105e06b-2110-4d87-8744-b9feb242c2f4" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="051856c9-b750-4d9b-ae25-5c51e6730460" name="property" profile="CSharpProfile">
+                <elementDefinition Id="645fbd59-5238-49b9-a412-23898f7eb91e" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2b68ff8f-5318-4611-b6ca-ca5d5d531ca8">
+                    <propertyInstance Id="a724e74b-1467-4110-b4ab-2247eac96d73" name="ClrAttributes">
+                      <elementDefinition Id="51e3267b-13dc-432f-b082-62ec9ea9b4c2" />
+                    </propertyInstance>
+                    <elementDefinition Id="fbd01a84-9690-4caa-b68b-12dec22560b9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9c03edaf-1ba9-4f06-8058-f50add824047">
+                    <propertyInstance Id="0eb51226-9f30-46ae-965f-4eb98d6c09b6" name="Get" value="public">
+                      <elementDefinition Id="92c40757-d34c-48fa-9882-1c5e65847020" />
+                    </propertyInstance>
+                    <elementDefinition Id="42206d15-b712-469c-b6cb-d551f2709f0a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ef40fbdc-b9bf-4c00-a5c8-9a6a8569857a">
+                    <propertyInstance Id="fa511925-c31b-491f-8e0e-90e0b3bbed87" name="HasBody" value="false">
+                      <elementDefinition Id="d546a1e4-cfe3-4303-aa52-b37c77b22283" />
+                    </propertyInstance>
+                    <elementDefinition Id="524b9893-6343-4188-b961-126a31f7266e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="dce6a2fe-08af-4a0f-b81c-c0b302fa49ec">
+                    <propertyInstance Id="c0cbc4cb-b9ad-4245-80ac-92d67e17de62" name="IsUnsafe" value="false">
+                      <elementDefinition Id="2823b8d3-b49c-46e0-a380-7902b23b2443" />
+                    </propertyInstance>
+                    <elementDefinition Id="4abe825c-c43e-4864-a466-35dea2a46929" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="422133d2-c5e1-42cd-8db3-4eb0629ed638">
+                    <propertyInstance Id="de8281c7-d0dc-4c7d-a501-21d079b55e74" name="Inheritance" value="none">
+                      <elementDefinition Id="c7044a8f-1f8b-40d7-8667-b0e19858a229" />
+                    </propertyInstance>
+                    <elementDefinition Id="d87cda20-cf2f-4660-9cf1-b8e7d3d046a9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e406d3d1-99e4-40c9-bfba-7c0b43cced96">
+                    <propertyInstance Id="541b15a6-cbe2-4302-934f-1abf314085c3" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="c6c40eeb-0369-42fb-84a1-03dce5eaa015" />
+                    </propertyInstance>
+                    <elementDefinition Id="30380c13-69f3-4f3a-bd2c-2323e3ece7ed" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="15bd5579-3ad0-485c-b3c6-67315b3244d2">
+                    <propertyInstance Id="23f15c29-aba7-4c34-adc5-dd15bbe34c55" name="Set" value="public">
+                      <elementDefinition Id="86da5ef9-53fe-4329-ab69-87e3024b65de" />
+                    </propertyInstance>
+                    <elementDefinition Id="99c877e5-7109-4623-bd31-f11465c7d66e" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="7bef43bc-3b5a-4337-ba71-e5af8fe29482" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="83ef99f7-e303-4c6a-b4dd-401d956af9fe" name="Name" isLeaf="false" isStatic="false" isReadOnly="true" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="b51b78cd-bc1f-4189-bb51-49e0748d4dbc" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3DName" tag="ViewCode">
+                <elementDefinition Id="eb0aecd7-8697-42e1-adb6-b0a033d56c02" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a9accdd6-9c2b-48ee-b287-bd926d6e6b45" name="property" profile="CSharpProfile">
+                <elementDefinition Id="ddddb056-461f-488b-ae48-6dbbc603ee36" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="56513821-c372-490d-b854-1993437fe05a">
+                    <propertyInstance Id="e650d24f-c41b-408d-8316-adda7ebdd635" name="ClrAttributes">
+                      <elementDefinition Id="73125553-2029-43e3-8372-1d60555848a9" />
+                    </propertyInstance>
+                    <elementDefinition Id="490eb658-30bc-405b-a0e1-d6d730532597" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="4a617cb0-aab3-4076-ab07-719fd55cb4cd">
+                    <propertyInstance Id="d1895e59-a4df-4c6f-bddc-0afc08f3ed9e" name="Get" value="public">
+                      <elementDefinition Id="000e5cdb-a4fe-4eb3-87a3-e59fd8dbc135" />
+                    </propertyInstance>
+                    <elementDefinition Id="ec53f103-5a01-4d42-9a96-8731aaa725cd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="96558d31-eea6-4f48-8eaa-c209cc91483a">
+                    <propertyInstance Id="83a3cc68-e6c4-41b2-b8db-6bc44e9b3345" name="HasBody" value="false">
+                      <elementDefinition Id="4cc1b879-0e86-414d-bab2-b983bfa60848" />
+                    </propertyInstance>
+                    <elementDefinition Id="c7c639b2-b6f6-4716-be1a-125d8809727c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="23b4675e-19cf-4e27-8032-74988f676653">
+                    <propertyInstance Id="e6bca0ba-2079-4780-b13a-d646a8b43dbc" name="IsUnsafe" value="false">
+                      <elementDefinition Id="3316871e-ab2d-4162-aa05-8dc9c076c485" />
+                    </propertyInstance>
+                    <elementDefinition Id="b18d4d36-4f4d-4673-851d-61bdb1f91c19" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2ce51cf0-78b4-4e25-88d5-d0756552b6e4">
+                    <propertyInstance Id="2aa8a44b-eb62-4bef-a0d6-c9aeb4281ba5" name="Inheritance" value="none">
+                      <elementDefinition Id="0c0dbecc-fd50-4af1-b5cc-88f0e28957f7" />
+                    </propertyInstance>
+                    <elementDefinition Id="148bd4b6-969c-42d1-921c-811b0a419a8c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="261d8655-241f-4b54-86c7-6bde397cb00b">
+                    <propertyInstance Id="15d3a585-b243-4f37-88a5-fe5a09d40320" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="9d1880c0-1163-4dcd-bda7-b4140cb5d617" />
+                    </propertyInstance>
+                    <elementDefinition Id="96964fe6-810f-477c-a4a6-8c0a2bdced1f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d0f6dde6-5134-4cfd-ba57-26e70a931982">
+                    <propertyInstance Id="57cdb7f0-5b90-41ee-a56a-e7ce0157d97f" name="Set" value="none">
+                      <elementDefinition Id="bb7f0cc4-784b-4811-8097-a70f50dcb3d6" />
+                    </propertyInstance>
+                    <elementDefinition Id="d55279f7-5bb0-4be9-88fe-77cb510adfc2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b834cfcb-0062-4f6a-b2dd-cf2093e1fda7" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="0075ee74-4497-4cc9-aa29-548022e5c997" LastKnownName="RollName" />
+            </type_NamedElement>
+          </property>
+          <property Id="0a8091c9-0f1d-4a41-9f99-7037b9b2c48c" name="SecondDie" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="cb9ce62c-ad6b-4758-818e-d599b05d2b2d" handle="viewcode://./CodeSchema_Property?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3DSecondDie" tag="ViewCode">
+                <elementDefinition Id="6468d909-a188-4680-a10e-843ca38633ff" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="8e897be6-5e6a-4baf-954b-62cd1a09ba0f" name="property" profile="CSharpProfile">
+                <elementDefinition Id="e64a5a93-e4ba-45a0-ac6b-3c691eea0298" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b7597fd5-b586-46e3-aa4f-eac384b3d979">
+                    <propertyInstance Id="c105be1e-1d4b-4c28-8825-3f00af00d1e0" name="ClrAttributes">
+                      <elementDefinition Id="597a9e7c-8302-453c-9af6-d14feffa2256" />
+                    </propertyInstance>
+                    <elementDefinition Id="bb24359e-f338-49fd-a872-03a38dfd60ec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b373679f-c820-4631-8703-4b772f7fcb01">
+                    <propertyInstance Id="7c4f5f08-4284-4b54-bd68-97aba10323eb" name="Get" value="public">
+                      <elementDefinition Id="9f48aca5-711d-490a-ad96-d512315c798b" />
+                    </propertyInstance>
+                    <elementDefinition Id="f507278d-558b-42f0-af95-0fb8427d1489" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="e0dd50a7-40eb-4b73-a298-7bd477d340a7">
+                    <propertyInstance Id="15485b82-f3ef-4639-833d-9f8f82a00d8e" name="HasBody" value="false">
+                      <elementDefinition Id="cabced24-4a8f-4614-8aa6-0e935e7fa3f5" />
+                    </propertyInstance>
+                    <elementDefinition Id="a541b6fa-ca0e-4638-9437-ad7fc5558405" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2d61300b-aa9d-426a-ae7c-b19c69f59653">
+                    <propertyInstance Id="253912f5-a4ed-4fa0-b3b4-159000a1bbad" name="IsUnsafe" value="false">
+                      <elementDefinition Id="fec15924-55f3-4075-a0b2-b5cc8f5bf128" />
+                    </propertyInstance>
+                    <elementDefinition Id="4911cf35-d1ff-4553-8708-f9ab9aa9d4e5" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a4853da-6c0f-4ca6-8a62-e9e601dd04ad">
+                    <propertyInstance Id="70d1b293-735f-421f-918f-999d5d8b3237" name="Inheritance" value="none">
+                      <elementDefinition Id="b98f5e89-14e0-4de9-b2a4-6aa7bc94072d" />
+                    </propertyInstance>
+                    <elementDefinition Id="e81dc7c7-d28b-4727-826e-b771739fcd94" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1b51cfc4-4ad7-4d22-86ad-97e2ab0bac77">
+                    <propertyInstance Id="e3bdef5b-29ae-4586-beec-6f740c3d3f38" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a87142c0-273a-4c5c-99fc-063f494b91db" />
+                    </propertyInstance>
+                    <elementDefinition Id="48c48b2e-148c-42e1-b8de-023382f65a67" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="751a3495-c0b8-479e-bc50-3c8a5b67a682">
+                    <propertyInstance Id="fa336d73-ec83-4b9c-9027-fe6810386e07" name="Set" value="public">
+                      <elementDefinition Id="dc94a85d-c93a-408c-b34f-842bf48987e9" />
+                    </propertyInstance>
+                    <elementDefinition Id="bd9c14e3-b5c7-4f11-bceb-e777b7425d26" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="d7e99df1-4df5-4d70-9c9f-bfc55e6fed14" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="c773d04c-3d60-4684-9c22-84d35a322be0" name="random" visibility="Private" isLeaf="false" isStatic="true" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="1621800f-9167-4a45-82fa-3e83d942a770" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3Drandom" tag="ViewCode">
+                <elementDefinition Id="2c2dc860-939f-4299-9f18-e224dd50730e" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="7b44037a-f753-4a8b-8a68-0834a7edf727" name="field" profile="CSharpProfile">
+                <elementDefinition Id="4012b7fe-301f-4d08-83dd-75a1a60c4f28" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1c013be8-8963-4820-afb7-178e4ade7621">
+                    <propertyInstance Id="01c32aeb-926b-4ec5-9940-f7527c2a1c6b" name="ClrAttributes">
+                      <elementDefinition Id="f58466eb-fdb6-4b4b-8b62-c7df4fbdaa28" />
+                    </propertyInstance>
+                    <elementDefinition Id="b34ad948-f17c-4f8d-9213-f745897681fa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7e9c75d4-a853-4eca-928e-d9dfa3956c26">
+                    <propertyInstance Id="ae058c06-7de2-4e5d-b845-ce21496f3b24" name="IsConst" value="false">
+                      <elementDefinition Id="021f2ae3-0f6a-4411-8c8f-855d07bd20dd" />
+                    </propertyInstance>
+                    <elementDefinition Id="34118f1a-2462-45f5-909d-d414c1ce3f48" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ddfa9a41-b662-42d0-8747-e55df24bc97f">
+                    <propertyInstance Id="51a2db3f-3e13-4464-92ae-92ca4b360e57" name="IsNullable" value="false">
+                      <elementDefinition Id="adb3a458-9277-43f4-ad40-ff1d8af43bea" />
+                    </propertyInstance>
+                    <elementDefinition Id="d3d85364-f2f6-4a3a-bb19-4569e3201561" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="412ef36a-d187-4706-81ac-10becbac51b7">
+                    <propertyInstance Id="60a87942-d16f-49fd-9004-cead4e55b036" name="IsVolatile" value="false">
+                      <elementDefinition Id="ee9be5da-a015-49c4-a0d6-321194b1343f" />
+                    </propertyInstance>
+                    <elementDefinition Id="cd2e6da8-6d6b-48bf-ad65-6d24f45e3f28" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f3d01665-8c27-4e19-a9a3-3b3d25260cb8">
+                    <propertyInstance Id="920936eb-c765-4eba-b61a-e17c17b8e190" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="25bfe288-9391-4b56-9dc1-23ae45a8a7c3" />
+                    </propertyInstance>
+                    <elementDefinition Id="a719918f-7573-48a3-beef-31f4052a72b8" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="45650ca4-4ed9-4deb-b1e0-bbd033ca179e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="4ec349bb-ceab-4c8e-82b0-348df2b2b9d1" LastKnownName="Random" />
+            </type_NamedElement>
+          </property>
+          <property Id="b1009310-edbd-4462-b973-4bfae4fa1099" name="rollNames" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="6f6d98af-9a23-4043-b51c-e8c469b7ade7" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3DrollNames" tag="ViewCode">
+                <elementDefinition Id="d3aeed80-e369-420a-84ca-88e12d6c85de" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="21072af7-5842-44ee-8780-b3be42557fac" name="field" profile="CSharpProfile">
+                <elementDefinition Id="89df03f0-1cf9-445b-a711-be3120cb72e0" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="886a33e3-5ed8-42db-913d-9f36572b24fc">
+                    <propertyInstance Id="15ac0378-b910-4d32-9027-99419b6419c2" name="ClrAttributes">
+                      <elementDefinition Id="d9b5e765-149b-4bae-ad03-a02ea7a2ce0d" />
+                    </propertyInstance>
+                    <elementDefinition Id="686b34d7-3ebf-40b8-9fc9-3feaefb8ceb1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="eeca1f40-8a99-438e-90c2-90cf457f5e3e">
+                    <propertyInstance Id="3d797b3a-a46d-48be-9de6-c39f190b2b78" name="IsConst" value="false">
+                      <elementDefinition Id="6526f6b6-7115-4ea0-9fb8-9705e4e38330" />
+                    </propertyInstance>
+                    <elementDefinition Id="a9356c5e-e8b1-4d26-935f-b47b33cba3ec" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="43b24be0-cfa6-4b5e-a819-b3d8cf2af0fe">
+                    <propertyInstance Id="dc64df5c-77ef-4535-a214-9ae7f12d9420" name="IsNullable" value="false">
+                      <elementDefinition Id="6f816410-d7b3-41be-8f01-d3c0e65750f1" />
+                    </propertyInstance>
+                    <elementDefinition Id="59fb5fab-a27c-4e9f-8b37-a0ee92447c48" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="7a84bbab-7919-48de-9c61-fa5bafe18d68">
+                    <propertyInstance Id="694e8fb6-ba6e-47d4-9dd4-5019fe085fee" name="IsVolatile" value="false">
+                      <elementDefinition Id="4c888a3f-975d-43c9-bdd2-5dc557c08a66" />
+                    </propertyInstance>
+                    <elementDefinition Id="682168ac-43ed-4350-b5a5-895da98abe92" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a2df393b-4e2b-4a82-adcf-3492e73a78a4">
+                    <propertyInstance Id="69591e26-4b8e-4295-8c60-ac2a10703132" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="6a9ce186-0f5c-4c65-85d8-1bfeb1c70552" />
+                    </propertyInstance>
+                    <elementDefinition Id="d3ddf5f6-e411-4b44-93bf-fe2a6432351d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b3a717d1-6826-4af5-b064-679a9dac7e04" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="bb04aa50-3d25-4434-a5a0-2948bdfbac19" LastKnownName="Dictionary&lt;Tuple‎&lt;Int32‎, Int32‎&gt;‎, RollName‎&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="baa764f9-9e72-4d8e-bc28-77987e3c2778" name="Roll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="70a0df33-f8cb-4206-9ccc-75cbf2d52731" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)])" tag="ViewCode">
+                <elementDefinition Id="981cb6fc-920b-42f7-9c06-93777cb3fad2" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="953646db-4807-4135-a94c-879cdfbe531b" name="method" profile="CSharpProfile">
+                <elementDefinition Id="7b61b971-0b31-48ca-80a8-4e2d9baa0fae" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="b84896fa-a812-498b-98ed-208cb73b7c06">
+                    <propertyInstance Id="666bb972-670b-42ac-8f76-d8e11b8c8e13" name="ClrAttributes">
+                      <elementDefinition Id="3487d798-9bff-417c-abc7-ef34f4f6fbba" />
+                    </propertyInstance>
+                    <elementDefinition Id="4f5a35aa-088a-4cb9-8f89-54df4c2bf25b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5df47123-1797-4be0-a52c-af32b985816f">
+                    <propertyInstance Id="808b894d-2e74-4ee3-9a24-d87d2e35fdbb" name="IsPartial" value="false">
+                      <elementDefinition Id="da6f40a4-d59c-47ac-8c07-e08daa813d6b" />
+                    </propertyInstance>
+                    <elementDefinition Id="b080deb1-cd96-4bb7-9189-d628a274bb36" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ca9df7ea-8988-4b7b-8074-a0f547ee1d2b">
+                    <propertyInstance Id="9d1b0aa2-317b-47b3-9194-3aff3b73150a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="08db119f-1e39-4678-972a-9c16c48e384c" />
+                    </propertyInstance>
+                    <elementDefinition Id="935ce9a2-03dc-464b-a8b2-39d76dfc25c1" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ccc9fbcd-db08-44f5-a1d6-346659af5c7a">
+                    <propertyInstance Id="b367f45f-54b1-4806-bc2c-0feb35a93a2d" name="Inheritance" value="none">
+                      <elementDefinition Id="7bbb2229-c64b-4dda-90a4-e6fbc2ddf84e" />
+                    </propertyInstance>
+                    <elementDefinition Id="ef3392a9-03f7-42a9-84da-43e2e06ecb85" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="15122022-3682-4864-a4c5-70080d90f42c">
+                    <propertyInstance Id="f71e2de3-4e8c-4a18-ad5f-4e4d935f27ed" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="fdaac483-695a-42b3-965d-0badb704d937" />
+                    </propertyInstance>
+                    <elementDefinition Id="693ad720-3b70-474b-a3e8-454c099ab374" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6fef5f9e-b9e3-46ee-951f-cde895927ff0">
+                    <propertyInstance Id="e7c78c2a-61af-428a-9343-6e48118d557a" name="params" value="false">
+                      <elementDefinition Id="bbca2b8e-bfee-4270-9cac-b1e56a14624a" />
+                    </propertyInstance>
+                    <elementDefinition Id="c345a1c6-894c-44e7-ab22-3b77ef46b99a" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="134b5706-b202-4ddb-a88b-eff5d8b0f374" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="04ce344a-3439-42d4-83d1-3ca05a6f2456" name="firstDie" direction="In">
+                  <referencesInternal>
+                    <reference Id="c7870de0-8174-43a8-a2cc-101983e18794" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DfirstDie" tag="ViewCode">
+                      <elementDefinition Id="acfc8822-d8dc-4677-b331-32ad00e03b79" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="37f5a157-fea6-42aa-bdbe-ff91f27947c7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="9c69b09e-8a1a-4873-ba0a-cbfe32e11312" name="secondDie" direction="In">
+                  <referencesInternal>
+                    <reference Id="33e49bb7-d0c3-4a15-8373-c60c0bf9bc03" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3D(Name%3D.ctor OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)%2C(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DInt32)]) ParameterIdentifier%3DsecondDie" tag="ViewCode">
+                      <elementDefinition Id="605a3654-9301-4e0f-91c4-0e33b1a611d4" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="6eec4ef8-071c-458a-ad97-e307c0f70872" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="6067c373-dba2-48f9-8c02-604778a5b379" name="Roll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="64bb791f-3a50-4703-a0e9-22d259e1444c" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="cdba4216-7aa8-407e-a8b9-61ef9b6e0de7" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="443babcc-d104-47bd-95d2-bc98fd167dc0" name="method" profile="CSharpProfile">
+                <elementDefinition Id="5ac58295-74db-4ac9-b548-2126bc40d0b2" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="446e3349-c916-4aa8-b85d-670a65a23f6e">
+                    <propertyInstance Id="20330359-02b9-4298-a6dd-0571805cd05d" name="ClrAttributes">
+                      <elementDefinition Id="a83d2d7e-b5c9-4523-afa0-e84ba1cb4f84" />
+                    </propertyInstance>
+                    <elementDefinition Id="0ece9708-41db-4e44-9810-f8e7c1cfc640" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="9a9e317c-e64a-49ba-abc7-0eb63ebb32a3">
+                    <propertyInstance Id="103f2d6d-8514-4764-a48c-874743ad1c36" name="IsPartial" value="false">
+                      <elementDefinition Id="c07b1064-0157-4458-a8e6-96658f084759" />
+                    </propertyInstance>
+                    <elementDefinition Id="c98553f2-3e4d-46a8-a1a5-46c1cbe3649f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="38c33f3d-bc86-45a1-ae0f-12adb7f7488e">
+                    <propertyInstance Id="5d39499f-8dc6-4e4e-9d42-ab465be254c7" name="IsUnsafe" value="false">
+                      <elementDefinition Id="a1667237-2139-4054-a875-60844f094f26" />
+                    </propertyInstance>
+                    <elementDefinition Id="c0d64c23-1f1e-4a1f-b53d-23dfd9663c75" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="31454899-1147-4839-98c0-fba8183bd1dc">
+                    <propertyInstance Id="f21387fa-ae2e-40b8-a684-d849df76b7e1" name="Inheritance" value="none">
+                      <elementDefinition Id="ac5aac8b-9c53-45c2-9a98-a7349c33f621" />
+                    </propertyInstance>
+                    <elementDefinition Id="12375bcb-7dab-4728-8225-de5fb8359563" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f63925a0-b84e-47b5-bc42-54ddb47e674e">
+                    <propertyInstance Id="bbdc5314-43e1-4547-8dd0-13054d230aee" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="a01dc633-fcf4-4cd4-8e8a-ff5e0f7af8ad" />
+                    </propertyInstance>
+                    <elementDefinition Id="aac3c3e1-227e-49c2-b6b4-75dcbb90e039" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f588497e-e498-445c-acf4-14b22b950dfb">
+                    <propertyInstance Id="95a821c8-7674-434d-b18d-7e86df8ce1b6" name="params" value="false">
+                      <elementDefinition Id="986da0a2-2484-4952-9aa9-68c4da91d941" />
+                    </propertyInstance>
+                    <elementDefinition Id="47e09f9a-9ede-4ae2-990a-ebb28aad2625" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8cd66217-0a4e-40bf-beb6-a80f1b110044" />
+          </operation>
+          <operation Id="94705746-5482-47c2-8685-623a9e91ac37" name="GetRandomDieValue" visibility="Private" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="da1b6916-750c-4fbf-95e9-e049ee8c65a2" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRoll Member%3DGetRandomDieValue" tag="ViewCode">
+                <elementDefinition Id="98376e00-8dad-4c4a-9b88-5c2dd67f6112" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="b633bbb1-ba66-4a12-b9a1-b1dfc6fb135f" name="method" profile="CSharpProfile">
+                <elementDefinition Id="f808f7b1-2f4e-41a6-899f-67e1381ad2f9" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d7c87ace-bb8f-4571-989e-b9a07b50dc40">
+                    <propertyInstance Id="84e471de-26a3-4ce2-943c-bc8cce469bdc" name="ClrAttributes">
+                      <elementDefinition Id="21e1e733-1a9b-4edd-a69f-a7af7b4a5e94" />
+                    </propertyInstance>
+                    <elementDefinition Id="16560232-ef86-41b0-b468-dd0040e0bd65" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="2e1e2002-072d-4b9c-a02a-1c987ed29704">
+                    <propertyInstance Id="331284f1-e65b-46b7-8e5f-6bdc4c8ccd5e" name="IsPartial" value="false">
+                      <elementDefinition Id="ac84039f-88e1-4344-8f42-a26155427ef6" />
+                    </propertyInstance>
+                    <elementDefinition Id="9368264c-060f-4a8f-b4ea-b05801927fdd" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="db1f1b78-f366-403c-92b5-e4c093d37bad">
+                    <propertyInstance Id="8a191129-5ec3-4749-8f68-d4765162182a" name="IsUnsafe" value="false">
+                      <elementDefinition Id="6a27bb2f-ba29-4e35-af9b-552448603f28" />
+                    </propertyInstance>
+                    <elementDefinition Id="f3b4ee92-bd6e-4db7-a4d0-41fb8eb75647" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="138b2259-4a32-4694-8da8-e140261bb5ec">
+                    <propertyInstance Id="ba4bd1fe-f1cc-48ac-9fac-3dd913cb6ce2" name="Inheritance" value="none">
+                      <elementDefinition Id="827675f6-d2ec-44f7-9b74-935ad6a274f7" />
+                    </propertyInstance>
+                    <elementDefinition Id="57a545dd-5d7e-4ee5-ace9-5c075546512b" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="c638a07d-688f-4aee-8b42-be25ee76c014">
+                    <propertyInstance Id="bdee08b2-9114-4516-9bb1-5872f7c58dbd" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="96d9dfe2-ce79-459e-948c-3c6b8546358b" />
+                    </propertyInstance>
+                    <elementDefinition Id="6d53a8e3-fa03-4f6c-a5fe-d7085e17a898" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="cd60b3ad-72a0-4dae-b5cc-c4f2afa52faf">
+                    <propertyInstance Id="8f3a1a25-1b3b-4495-a7d6-095da3b485c4" name="params" value="false">
+                      <elementDefinition Id="c95d41dc-f917-46c3-9fdc-bda2532300e0" />
+                    </propertyInstance>
+                    <elementDefinition Id="b122bda3-0a77-4b8a-ac57-7c10d3ad8700" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="ff32ffa0-2d80-4ddc-97ee-302e5a79b693" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="44a65297-739d-44d8-9f4f-dde39835044f" direction="Return">
+                  <elementDefinition Id="45362026-fb18-4d20-a203-e509ede4c2d6" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" name="Integer" isAbstract="false" isLeaf="false" cachedFullName="Integer">
+        <elementDefinition Id="220a3521-e091-4221-bae9-3ef9018e845c" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="0075ee74-4497-4cc9-aa29-548022e5c997" name="RollName" isAbstract="false" isLeaf="false" cachedFullName="GoF.CasinoCraps.Modeling::GoF::CasinoCraps::RollName">
+        <elementDefinition Id="a599dfd6-5a08-4bef-9d46-93eb953382fa" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="4ec349bb-ceab-4c8e-82b0-348df2b2b9d1" name="Random" isAbstract="false" isLeaf="false" cachedFullName="GoF.CasinoCraps.Modeling::System::Random">
+        <elementDefinition Id="c84f9b31-7d37-4cdd-a070-cb48ae295676" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="bb04aa50-3d25-4434-a5a0-2948bdfbac19" name="Dictionary&lt;Tuple‎&lt;Int32‎, Int32‎&gt;‎, RollName‎&gt;" isAbstract="false" isLeaf="false" cachedFullName="GoF.CasinoCraps.Modeling::System::Collections::Generic::Dictionary&lt;Tuple‎&lt;Int32‎, Int32‎&gt;‎, RollName‎&gt;">
+        <elementDefinition Id="19249149-6511-4773-88e4-65ae64492f56" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <enumeration Id="dabe49bc-e61c-427b-9b32-20d3065d5236" name="RollName" isAbstract="false" isLeaf="false">
+        <referencesInternal>
+          <reference Id="3431a996-74ca-43d5-b225-b37349b68451" handle="viewcode://./CodeSchema_Enum?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName" tag="ViewCode">
+            <elementDefinition Id="ad50e05c-0c56-4f64-9344-ccdce3923a6b" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="4fafaa39-782a-485c-bbb2-9d4df62787e4" name="enum" profile="CSharpProfile">
+            <elementDefinition Id="6e511636-4871-45b4-84ce-1afd9059eda4" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="89a4ea1c-ebe8-4189-b322-f1451fce7fec">
+                <propertyInstance Id="f71868d4-5d0f-4987-8aa6-8b48c536c5ae" name="ClrAttributes">
+                  <elementDefinition Id="51c6dc0d-570a-4a36-9002-e42d8b5dd2d2" />
+                </propertyInstance>
+                <elementDefinition Id="e9d3fe40-b0ce-4921-97bc-c3ab89db836d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4edca9a5-4f61-4d92-8ae7-1a0869678012">
+                <propertyInstance Id="d5d6998a-fcd2-4050-88c7-4335c0de2d79" name="BaseType" value="int">
+                  <elementDefinition Id="1a0f05b7-3925-422e-9c1e-f9c559427260" />
+                </propertyInstance>
+                <elementDefinition Id="4b8d9ac1-1687-48cf-be2e-8dc825a75c26" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e128c1a3-2fa9-485b-8a7e-ec7fe420ccc3">
+                <propertyInstance Id="9865178a-193e-4914-9e1e-60f1365b66cf" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="db67d3a2-17e2-4a2e-bdc0-36d234d5f000" />
+                </propertyInstance>
+                <elementDefinition Id="bbd06b6b-5de1-45b5-b06e-bc3d4c8bf496" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="a599dfd6-5a08-4bef-9d46-93eb953382fa" />
+        <ownedLiterals>
+          <enumerationLiteral Id="4ddece52-e05a-46af-a8a3-9e6b42d7470e" name="AceDeuce">
+            <referencesInternal>
+              <reference Id="fc93ee4b-6ad8-4d9e-a1ba-614bb5a5eeb5" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DAceDeuce" tag="ViewCode">
+                <elementDefinition Id="84175117-0c99-4c15-ad47-9f9a7444533a" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="ded6b848-2c4a-4c59-a811-531aab505d4a" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a8a110d4-ae4e-46b0-937e-3d787e94e386" name="Boxcars">
+            <referencesInternal>
+              <reference Id="d7e3be45-9465-463b-a2ba-ae63be4ffd42" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DBoxcars" tag="ViewCode">
+                <elementDefinition Id="85e4867a-a557-4c8c-b856-6c51597cbe54" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="04fcff9b-b82c-4bbc-8f7a-91c1594829b3" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="865aade1-31bd-4dcc-ab02-9270c88bb82c" name="EasyEight">
+            <referencesInternal>
+              <reference Id="432ce1a2-9c5c-4879-98e7-e04898d72978" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DEasyEight" tag="ViewCode">
+                <elementDefinition Id="0fc557b2-c76f-4960-8234-b841ba7abbc3" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="3a53e80e-05b9-4f3f-8cc2-b91a509a12a2" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="ab9ec6b1-ef00-4878-ad9e-2024e800bd49" name="EasyFour">
+            <referencesInternal>
+              <reference Id="c529baf7-6800-49ba-8229-9dea49b8d9a5" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DEasyFour" tag="ViewCode">
+                <elementDefinition Id="7b89bc7f-08d8-4887-a286-0fd1df388e8d" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="20fe8e10-b626-4c2f-8647-8bf80add2241" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="bfaf3790-b915-45f1-acb6-57ad5a4d8815" name="EasySix">
+            <referencesInternal>
+              <reference Id="91cd5987-2bc8-4fdf-bab3-d855d7ae265f" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DEasySix" tag="ViewCode">
+                <elementDefinition Id="84bf7fd3-483f-4bf4-901b-a561ca77c3de" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="f0a2351f-3f65-4626-9a61-8d643aa79fcd" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="4465fa28-59ee-430a-a8f4-2a4f45ebcf9c" name="EasyTen">
+            <referencesInternal>
+              <reference Id="8bfc69e8-049d-4e17-988c-2e011b6b6236" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DEasyTen" tag="ViewCode">
+                <elementDefinition Id="1218be76-8f34-4adb-8b6d-9f04e55b890d" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="5103045f-6427-4f0e-bf15-45ba21b1d32f" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="7f652161-e19e-468a-90de-3caf2a90feaa" name="Five">
+            <referencesInternal>
+              <reference Id="03d282f1-88e6-40e2-af7e-5e3001dc9052" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DFive" tag="ViewCode">
+                <elementDefinition Id="4ff31f56-5584-478a-ab05-ed4e718023df" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="a5b98146-fa46-4dc6-9405-85c799fc5853" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="8449149d-ab1d-469b-b071-2c5b68728c99" name="HardEight">
+            <referencesInternal>
+              <reference Id="2ce41501-c994-42ee-94bb-73e360d3cfaa" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DHardEight" tag="ViewCode">
+                <elementDefinition Id="78e25c03-af61-4b12-9e27-829c53082d04" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="c9e472c1-387a-4fc4-98d6-eb58525eebe1" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="a5fea8d7-8fe2-42c8-afe4-9801b4c16eee" name="HardFour">
+            <referencesInternal>
+              <reference Id="d0af926b-36da-450c-982c-69fab3180d46" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DHardFour" tag="ViewCode">
+                <elementDefinition Id="d57ac29a-962d-4833-b78b-7282f6c1c7d4" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="991d6b2b-adaa-4869-ba63-1cb5a869eb86" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="0eaf4552-a22e-4555-9490-ff2810c3880b" name="HardSix">
+            <referencesInternal>
+              <reference Id="9d0faaa7-a05d-4e0f-8987-52eaac852299" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DHardSix" tag="ViewCode">
+                <elementDefinition Id="87de2dfe-2aaa-4f75-a590-d6079c852373" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="2b39906a-7bc4-4525-9323-62c7a9e6c796" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="ea70b160-dda3-4ec3-b24a-18a7f5efc469" name="HardTen">
+            <referencesInternal>
+              <reference Id="916b7a64-05db-449a-a2ef-63a5afc70809" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DHardTen" tag="ViewCode">
+                <elementDefinition Id="6d539946-239e-4a8a-bc56-c0d3b6340690" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="a45945ed-b746-4bdb-95c6-04200fd21ad4" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="0626423f-0261-402b-9b59-0c69b825952a" name="Natural">
+            <referencesInternal>
+              <reference Id="446df879-9bf7-4f27-a689-39a0d37afd00" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DNatural" tag="ViewCode">
+                <elementDefinition Id="8e5d5327-ea29-4509-96e9-4c7f313f4803" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="f1ff155f-bdfe-4a04-a169-315e41ab5234" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="908b0228-b81d-4030-be3b-15535eaacf9d" name="Nine">
+            <referencesInternal>
+              <reference Id="3860177e-3e92-469c-aeb0-01e0a7d86f74" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DNine" tag="ViewCode">
+                <elementDefinition Id="ab969a10-357b-4ee8-aadb-f03e55906bb8" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="e514300e-c6ac-4e9e-8076-b7e0f324a24d" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="5c5e1a9c-230a-4b9a-9313-4417b9fc1ec8" name="None">
+            <referencesInternal>
+              <reference Id="6f78a9bc-3050-405e-bb6b-a0b40fa42f17" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DNone" tag="ViewCode">
+                <elementDefinition Id="4ee6bd24-e6cd-4cb2-92d9-da6d44e0c7d9" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="b0a80d65-02b7-43ed-8be5-7114bda26396" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="137a1194-af2a-4858-aab9-1afa5d61e5eb" name="SnakeEyes">
+            <referencesInternal>
+              <reference Id="cf32fb32-c885-4f06-a7a7-944bdaf04f3b" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DSnakeEyes" tag="ViewCode">
+                <elementDefinition Id="98f6feb4-32bf-416b-83a3-5950a620b4b3" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="abd26835-2d14-4ae4-b946-984fe2393eb6" />
+          </enumerationLiteral>
+          <enumerationLiteral Id="f116a072-34fb-4d40-8a92-6c04bd1a096a" name="Yo">
+            <referencesInternal>
+              <reference Id="e190a016-ff76-4bea-9077-e301fcc3cab3" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DRollName Member%3DYo" tag="ViewCode">
+                <elementDefinition Id="8ded71b7-7d29-4d85-8f32-43f7f19983ad" />
+              </reference>
+            </referencesInternal>
+            <elementDefinition Id="f0b0c7d5-e926-41ee-82fa-9494ea1aa42f" />
+          </enumerationLiteral>
+        </ownedLiterals>
+      </enumeration>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7d51793f-72dc-449b-b28c-9a43765d1092" name="Game" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <referencesInternal>
+          <reference Id="422ba04e-51d2-434f-9d1a-20be2c0fed41" handle="viewcode://./CodeSchema_Class?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DGame" tag="ViewCode">
+            <elementDefinition Id="fbef5850-5463-4b17-9aed-41c7b8cd6f2d" />
+          </reference>
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance Id="dc2d80ce-277a-42e9-a2b7-0368c00104fa" name="class" profile="CSharpProfile">
+            <elementDefinition Id="0a132862-4b25-4424-b7a1-75b0ab11a280" />
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4ea81c35-2946-49bc-adc3-748b00fe504b">
+                <propertyInstance Id="cc9d4686-f20f-42ab-9e9f-5eeb90afb6a6" name="ClrAttributes">
+                  <elementDefinition Id="b2eec41f-881f-4029-97fd-18251db1b93a" />
+                </propertyInstance>
+                <elementDefinition Id="816f9be2-0147-468d-85a4-43a0b25a1ac4" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="ba1f6469-b001-4b5e-8b17-f58c44c1aeca">
+                <propertyInstance Id="df16f245-3c1e-41b7-92e6-7217045c1acc" name="IsPartial" value="false">
+                  <elementDefinition Id="a80511c4-5551-4df5-a025-d988ad90c195" />
+                </propertyInstance>
+                <elementDefinition Id="277280e5-104b-40f5-b9ae-a79675d78e38" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="e606fd65-1cf3-403c-94e1-fb30ff79712b">
+                <propertyInstance Id="5d662319-ce5c-4baf-a071-96294641cce2" name="IsStatic" value="False">
+                  <elementDefinition Id="af10ef66-2575-4884-a167-8826adb9caa9" />
+                </propertyInstance>
+                <elementDefinition Id="245601af-d088-41a8-86b3-3ab528a5e6c9" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="be6f5938-74c5-419b-8120-d4d18955167d">
+                <propertyInstance Id="0c058749-270f-4105-9c11-b411f289738a" name="IsUnsafe" value="false">
+                  <elementDefinition Id="8530e173-7293-4a8e-83dc-f6c28038617e" />
+                </propertyInstance>
+                <elementDefinition Id="08156d87-b7b8-49f1-bf11-1c49af80932d" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances Id="4c960811-96c0-47ce-a716-b71986a2f6ce">
+                <propertyInstance Id="e6596046-b8bd-426d-b8b7-098581d70c2c" name="PackageVisibility" value="internal">
+                  <elementDefinition Id="db7d426c-78de-4fe7-b15e-5664f064bd24" />
+                </propertyInstance>
+                <elementDefinition Id="ac1be055-ac21-4131-8f66-4a57867eb2a3" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+        <elementDefinition Id="b06810c4-2686-4827-b19c-6e98d68c8e25" />
+        <targetEnds>
+          <association Id="7b578feb-4c2f-4876-940a-aea45907bc71" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Roll" isLeaf="false" isAbstract="false">
+            <classMoniker Id="5a9fcfc6-5129-4eb1-8cc6-8439fb6dc4a1" LastKnownName="Roll" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7edecb22-4923-4e5b-8b68-b23f7af4caee" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="428bb756-fddf-4b18-8db9-7d399f21f661" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="3d948f75-5462-491b-9881-2c3210b9dd2d" name="Roll" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3347d9c5-1bee-4acd-829e-dc691ce0c2db" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3fc8cd5c-47fe-43db-8d32-35356d8a187f" />
+          </association>
+          <association Id="44de8f19-f4bf-4abf-b413-ebc14a82318a" isDerived="false" sourceEndRoleName="Game" targetEndRoleName="Player" isLeaf="false" isAbstract="false">
+            <classMoniker Id="2666eb5b-f2aa-4676-8642-90f52dc38fac" LastKnownName="GoF::CasinoCraps::Player" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="74bfafa1-75c5-425d-a280-41ab8a71ed92" name="Game" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="2512cf3d-07cd-4fb3-bddc-007e60ccd1c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="437daaf0-bdf5-454f-8085-03049bc2c13a" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="4d239877-7794-4b8e-8ed1-b8295b213892" name="Lower" value="*">
+                      <elementDefinition Id="4bf5c702-573d-48b8-b181-509c98d82a42" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="31c8b2c8-c241-4095-a4d7-ac3f139e511f" name="Upper" value="*">
+                      <elementDefinition Id="47e3d4aa-063f-4dbe-bcd4-f3c8ae2e02bb" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="eccd0835-1513-4d46-b5a1-e52b6b0613f4" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="223d8645-764c-4e5a-98bd-5e194468dc08" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="a7e38fa4-e851-4ba2-94bd-c60b431079bc" name="rollNumber" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <referencesInternal>
+              <reference Id="fd87e7e1-98de-42b4-83d4-e6869ad84084" handle="viewcode://./CodeSchema_Field?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DGame Member%3DrollNumber" tag="ViewCode">
+                <elementDefinition Id="3f001231-6cec-45b3-9b9c-92cdd6ce19d1" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="e1b88719-cba4-48bd-9136-618e518a9815" name="field" profile="CSharpProfile">
+                <elementDefinition Id="1fdd4fc4-2af8-4a9e-89d9-b0a0184aa50a" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="022314ad-3f55-4ce4-98d0-ddc0f8abaeeb">
+                    <propertyInstance Id="25ed695c-695e-4f41-845c-213658d3af20" name="ClrAttributes">
+                      <elementDefinition Id="04638951-c5c0-4c3a-aaa6-922fa570a004" />
+                    </propertyInstance>
+                    <elementDefinition Id="554a2842-2a62-462d-9ae3-d118982334e9" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="a347f772-edb5-498d-ba51-c8eaeadbd20e">
+                    <propertyInstance Id="36e08339-f307-47fe-9313-38dfee88861f" name="IsConst" value="false">
+                      <elementDefinition Id="68ec0cec-a6ec-4d81-803e-8314dc924d9b" />
+                    </propertyInstance>
+                    <elementDefinition Id="f1376229-c51f-4bfb-ac0f-eca68da763d6" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="28365772-5ab5-4fae-b68d-6a02458fb0f0">
+                    <propertyInstance Id="c722ad79-7e0e-4d91-b05e-6ff4783c3adc" name="IsNullable" value="false">
+                      <elementDefinition Id="efda36f2-848a-4395-968d-0e0462f26fa7" />
+                    </propertyInstance>
+                    <elementDefinition Id="1ae61fbd-1edf-4af9-ac9a-42884d701cfa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="51f52989-da79-487c-803e-11e5d27f2fe7">
+                    <propertyInstance Id="4e2f89c2-c8cb-4135-8f84-60671d4b0352" name="IsVolatile" value="false">
+                      <elementDefinition Id="0dffea28-1352-478f-bd3f-c0097ca9e321" />
+                    </propertyInstance>
+                    <elementDefinition Id="e7050ed9-0b36-49d2-9798-424c106951db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="6a249433-bf13-4f7e-ba18-5d526f639701">
+                    <propertyInstance Id="c342f9ba-d686-4729-b9d3-67823cb9441a" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="604f3825-4a00-4ef5-9d4f-de590ff4158d" />
+                    </propertyInstance>
+                    <elementDefinition Id="a162ffb6-b9ab-43b0-bb91-3a1f94eda0c2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="b858f6a3-dd81-4306-904d-14b8fc1cab9e" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+          <property Id="0a515190-3332-467f-be7a-652fc16440b2" name="currentRoll" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e7363c21-d55e-46a7-b4ac-2c4d34f20bf9" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="ca37cc1b-8fe3-4cb8-a49a-02b46c90b24d" LastKnownName="Roll" />
+            </type_NamedElement>
+          </property>
+          <property Id="3f97f39f-a38e-4385-8b09-00174c052007" name="players" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="752dc737-c904-4407-ae46-751afdf3c518" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="fa0857eb-695c-4b73-b7a5-67ca601ad983" LastKnownName="List&lt;Player&gt;" />
+            </type_NamedElement>
+          </property>
+          <property Id="050f612d-b03a-45da-91c7-2fdabfa7c7ba" name="Point" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="8774d048-36b2-4b03-8e7d-8324ed07e60f" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="9c5b84f5-fc27-4787-96a4-b7b6e3a640e2" LastKnownName="Integer" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="080f562c-bd0c-48c5-94af-25f34afb4bdd" name="Execute" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="b7f237eb-8165-48bd-bcd5-1bb18f74304b" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DGame Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)])" tag="ViewCode">
+                <elementDefinition Id="a85d60b6-f5c8-46c0-967d-e350c732d376" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="6929937b-a70e-4783-9d6e-fa79809d2a63" name="method" profile="CSharpProfile">
+                <elementDefinition Id="d40c63cf-94bf-477b-b2c3-8fcd951793cc" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="f4df35cf-1ac9-4c02-9aca-507399e34f98">
+                    <propertyInstance Id="92c963cb-f96c-4782-9292-a491ecc54738" name="ClrAttributes">
+                      <elementDefinition Id="0ccfec91-d982-4933-9253-591018503708" />
+                    </propertyInstance>
+                    <elementDefinition Id="8903e531-a081-4be5-8a45-6bf7e9e7a273" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="d7907281-61dc-4b13-8e40-146f37aeaf55">
+                    <propertyInstance Id="2eb2abae-024c-4d1b-8693-b3644c1efe76" name="IsPartial" value="false">
+                      <elementDefinition Id="0cb04a84-5abf-41ba-b9ba-d43ffcba29a0" />
+                    </propertyInstance>
+                    <elementDefinition Id="32d159e4-0fb7-40ba-8edc-252941d76a0f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ee5ff52d-d358-44f9-8991-c7c8da2532b9">
+                    <propertyInstance Id="031189a0-054d-4411-981d-e85246da4737" name="IsUnsafe" value="false">
+                      <elementDefinition Id="da62d18f-535e-4653-82d1-d924c97faa23" />
+                    </propertyInstance>
+                    <elementDefinition Id="d85d34b3-579d-4e5d-8037-5dbfee8c72db" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="0ac3fdf6-e650-4968-b78a-6602058c03d0">
+                    <propertyInstance Id="41489dd3-320a-41d1-9d67-66dc6cdde441" name="Inheritance" value="none">
+                      <elementDefinition Id="8ba24ef3-2cfc-4ede-af34-cbd10a996d39" />
+                    </propertyInstance>
+                    <elementDefinition Id="04f84ff6-4723-41e2-944e-fdda2e703ad0" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="84d11ecd-4add-4fb4-b837-a9157dedc65a">
+                    <propertyInstance Id="5660659d-b27f-450a-8a6c-3e2ad61c92ed" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="b499f474-18bc-4406-a5d5-b2f9af86a880" />
+                    </propertyInstance>
+                    <elementDefinition Id="3a505e6d-14fb-4cfb-8f87-3e04a537431f" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="09808104-9a1b-455f-a990-1b4578a89ed1">
+                    <propertyInstance Id="ca2d81e8-5a58-4988-b0f3-57f3f2915de5" name="params" value="false">
+                      <elementDefinition Id="a29988d9-de01-436c-921d-3c6fd82e01db" />
+                    </propertyInstance>
+                    <elementDefinition Id="8daeb258-2825-4e71-b8e7-36af68569cd2" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="8f55a4da-765b-40f3-9bd3-bcf1f5b185c6" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="dfea15d4-71a8-4306-9f95-b383285fb946" direction="Return">
+                  <elementDefinition Id="b040c607-86e2-4ca4-a9f9-730639a4397f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6d86b57-f22b-49dd-abce-68b903408d08" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="c7c95486-cdff-4cea-9c63-bfaba1fe6d5b" name="command" direction="In">
+                  <referencesInternal>
+                    <reference Id="421dc0cc-26a0-4433-933f-2cba2f4f0828" handle="viewcode://./CodeSchema_Parameter?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DGame Member%3D(Name%3DExecute OverloadingParameters%3D[(Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem Type%3DString)]) ParameterIdentifier%3Dcommand" tag="ViewCode">
+                      <elementDefinition Id="8552ec95-4fea-47bc-9ff4-7d4f3ba7ab58" />
+                    </reference>
+                  </referencesInternal>
+                  <elementDefinition Id="a0a2d87d-b979-4e51-8b0c-fddf73919d37" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="c6d86b57-f22b-49dd-abce-68b903408d08" LastKnownName="String" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="a4c7eb80-dfbe-4716-82dc-5d06330f7099" name="Game" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <referencesInternal>
+              <reference Id="33bf0482-4ae0-4bb1-bab2-1ca2b6b48abc" handle="viewcode://./CodeSchema_Method?Assembly%3Dfile:%2F%2F%2FC:%2FUsers%2FBrian%2FDocuments%2FGitHub%2Fcasino-craps%2FGoF.CasinoCraps%2Fbin%2FDebug%2FGoF.CasinoCraps.dll Namespace%3DGoF.CasinoCraps Type%3DGame Member%3D.ctor" tag="ViewCode">
+                <elementDefinition Id="db826973-c8a2-423e-96c1-1c22116b7ef8" />
+              </reference>
+            </referencesInternal>
+            <appliedStereotypesInternal>
+              <stereotypeInstance Id="a3645a5c-8c7a-417c-ba23-2ea335592a07" name="method" profile="CSharpProfile">
+                <elementDefinition Id="c4090ad4-5afd-4dee-9fdf-666edc673f6f" />
+                <propertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="274a74cd-7408-4ff5-9246-e3f8b7088d64">
+                    <propertyInstance Id="a828e19f-a69f-4157-9895-568a10d68ebd" name="ClrAttributes">
+                      <elementDefinition Id="3e167053-0792-45ce-8225-ce9ad78effdc" />
+                    </propertyInstance>
+                    <elementDefinition Id="96b31fa9-2e40-44bc-a9e4-4b68f920e3aa" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="69215d40-8706-47fd-8aca-bf9aca29d9b9">
+                    <propertyInstance Id="17d63412-b25c-47e0-b59d-28f35c18e1b3" name="IsPartial" value="false">
+                      <elementDefinition Id="92f7a9d4-5a8c-47ae-8641-8a9b96e92863" />
+                    </propertyInstance>
+                    <elementDefinition Id="b7ece4cb-f33d-4c6c-88d6-bd0c1c3e602c" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="ff58c59c-927e-4783-ba97-c679cd94e21b">
+                    <propertyInstance Id="5c71b052-d62e-40d1-ad54-32f286859719" name="IsUnsafe" value="false">
+                      <elementDefinition Id="1760cb30-ae50-4388-9f1a-ce01b17a3b64" />
+                    </propertyInstance>
+                    <elementDefinition Id="eccde3ed-bc9a-4d18-8a96-d66b68078d34" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="1dd82789-636f-4179-91e3-9ae3350fa861">
+                    <propertyInstance Id="a39425d5-7e87-4aee-ae5e-028ff8fdc585" name="Inheritance" value="none">
+                      <elementDefinition Id="db682907-0893-413d-a9d6-7403149fa40d" />
+                    </propertyInstance>
+                    <elementDefinition Id="94f9090a-f64e-43a8-b744-9ffa2b19dea3" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="5e30f620-596c-4fae-9647-dc6d6587db6b">
+                    <propertyInstance Id="f7e2ccb4-ec67-42df-ae6e-60fd30775ef6" name="PackageVisibility" value="internal">
+                      <elementDefinition Id="e78cc5a8-fa4e-4785-b86d-d7ba0280a39d" />
+                    </propertyInstance>
+                    <elementDefinition Id="4166130b-a93e-4d8e-982f-f77daf63112d" />
+                  </stereotypeInstanceHasPropertyInstances>
+                  <stereotypeInstanceHasPropertyInstances Id="74715c0f-d814-4a1a-86dd-4e2a478909a1">
+                    <propertyInstance Id="1fb5036a-df41-4be6-8517-29e10de525a1" name="params" value="false">
+                      <elementDefinition Id="e37800b2-8ebe-410a-a76d-5177b3ae5699" />
+                    </propertyInstance>
+                    <elementDefinition Id="9204b8b4-7470-4995-bf73-a9160587d2c7" />
+                  </stereotypeInstanceHasPropertyInstances>
+                </propertyInstances>
+              </stereotypeInstance>
+            </appliedStereotypesInternal>
+            <elementDefinition Id="6b99a446-74cf-45bc-94c6-29b87f5c77a0" />
+          </operation>
+          <operation Id="de074998-1114-4916-94b5-ad9483678ec9" name="SetPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ee100430-701e-471a-bdf9-702b8e6ba2eb" />
+          </operation>
+          <operation Id="a6d68271-b28e-4dc4-8cc0-c80b935f7645" name="SetPlayers" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1d941947-c5be-4386-a8b4-3239acdc9f13" />
+          </operation>
+          <operation Id="f421b32c-b580-43ae-a4bb-636d50291a7d" name="CheckBets" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5ef18966-39a5-40e7-88da-538f316e6e32" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="c6d86b57-f22b-49dd-abce-68b903408d08" name="String" isAbstract="false" isLeaf="false" cachedFullName="String">
+        <elementDefinition Id="59259974-6d55-42c6-b7bd-763d77ac8ef9" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ca37cc1b-8fe3-4cb8-a49a-02b46c90b24d" name="Roll" isAbstract="false" isLeaf="false" cachedFullName="Roll">
+        <elementDefinition Id="0bc49921-3d0e-4f78-b81d-0a608865e8cc" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="fa0857eb-695c-4b73-b7a5-67ca601ad983" name="List&lt;Player&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Player&gt;">
+        <elementDefinition Id="7c898fba-57c8-4e75-9b43-c9c32d736bd0" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2666eb5b-f2aa-4676-8642-90f52dc38fac" name="GoF::CasinoCraps::Player" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="68beff72-3ecd-469e-8ae1-cedb057b874b" />
+        <targetEnds>
+          <association Id="f144c513-c9f8-43e9-b8a5-bc8a343f8453" isDerived="false" sourceEndRoleName="Player" targetEndRoleName="Bet" isLeaf="false" isAbstract="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e8008f32-1926-4703-bf5d-d1f0e628797d" name="Player" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="4d63655e-f1e1-4926-86d8-a589e291ab14" name="Lower" value="*">
+                      <elementDefinition Id="f4319125-ec99-4f61-a187-3d104b138621" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="238ecf87-8e32-47ed-a570-6bee44d7bad8" name="Upper" value="*">
+                      <elementDefinition Id="2e920071-8f97-4ba1-b1eb-958d1e8aa2e2" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="a65b42e4-d861-47d3-9b0b-34084b99be43" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="460b1451-f28d-41b1-84a4-0af6744d55b7" name="Bet" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <lowerValueInternal>
+                    <literalString Id="0c5af169-ba5c-4c08-948a-bf285801c31d" name="Lower" value="*">
+                      <elementDefinition Id="0540e57e-94d5-4dfb-9cd7-b52014489cf5" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d8bc583b-42ab-47f7-baab-d4543ec0604b" name="Upper" value="*">
+                      <elementDefinition Id="a9ae5200-a6dc-4104-bf29-11054a9063b6" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="31e5e927-8d19-438f-9cf2-95a4fde7798c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3450439e-f853-4062-aab3-c4ce61dc79ba" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="beec7a1f-6314-4156-9a0c-bde75206b692" name="Winnings" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="3c5540bf-d518-4346-9b4e-53eae3930663" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d830b277-99e9-44b4-910b-62bd33c9d083" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+          <property Id="114a1688-fa39-4b07-a721-8b55c7cfc27a" name="Bets" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="825bf388-06c5-41be-bbb0-2549392c69af" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="51728328-9912-48ae-941e-be8a543459f2" LastKnownName="List&lt;Bet&gt;" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="371b768f-4d78-41a0-83d1-47b84d0c3dcb" name="EvaluateBets" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="93e82891-e5ac-47a7-a53a-7e001622446a" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d16cef46-0460-4752-97aa-e13d301abd77" name="roll" direction="In" isUnique="false">
+                  <elementDefinition Id="57f2b609-69ee-4990-9a57-705c60c5f602" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ca37cc1b-8fe3-4cb8-a49a-02b46c90b24d" LastKnownName="Roll" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="d830b277-99e9-44b4-910b-62bd33c9d083" name="Double" isAbstract="false" isLeaf="false" cachedFullName="Double">
+        <elementDefinition Id="674e2bf8-9617-409b-aac9-90e0243ccb62" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="51728328-9912-48ae-941e-be8a543459f2" name="List&lt;Bet&gt;" isAbstract="false" isLeaf="false" cachedFullName="List&lt;Bet&gt;">
+        <elementDefinition Id="fa75573d-33f0-48bc-8915-b74b6bb8e341" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" name="Bet" isAbstract="true" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fcabf186-9697-46d4-8c9d-0be4cf91166e" />
+        <ownedAttributesInternal>
+          <property Id="c8fb6a1b-a5a1-41ed-a630-ffb656178912" name="Value" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="63152085-ff71-4732-9d58-dd5d9c68668d" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d830b277-99e9-44b4-910b-62bd33c9d083" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+          <property Id="8ef002a2-9472-4e86-a04e-b299405925e8" name="Odds" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d7537ea4-9c6e-4322-a865-5a00a2d844d0" />
+            <type_NamedElement>
+              <referencedTypeMoniker Id="d830b277-99e9-44b4-910b-62bd33c9d083" LastKnownName="Double" />
+            </type_NamedElement>
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="0ad61f94-1a94-4799-bf13-a5126eee3a18" name="HasWon" isLeaf="false" isStatic="false" isAbstract="true" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cd67ee57-b8c8-48b4-a50d-2251bc1e9a13" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="aa3f95eb-d3f7-4c87-bd16-a25cfd2e0089" direction="Return" isUnique="false">
+                  <elementDefinition Id="67a86b3f-e488-4ef5-8e22-fd3b9b9e1865" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f6676ad5-a725-4a01-90f5-3f5ae9306ea8" LastKnownName="Boolean" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="d358e942-ce70-4d4a-8917-b433d89d3501" name="roll" direction="In" isUnique="false">
+                  <elementDefinition Id="79bf2b25-01a8-462f-99f1-9fe161b07da7" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ca37cc1b-8fe3-4cb8-a49a-02b46c90b24d" LastKnownName="Roll" />
+                  </type_NamedElement>
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <packageHasNamedElement>
+      <referencedType Id="f6676ad5-a725-4a01-90f5-3f5ae9306ea8" name="Boolean" isAbstract="false" isLeaf="false" cachedFullName="Boolean">
+        <elementDefinition Id="8943dc84-709e-4f62-b15a-a3273aa6f165" />
+      </referencedType>
+    </packageHasNamedElement>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c8b8b18a-22b4-4fe7-bb10-514f35b0adeb" name="BetPassLine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="963ba679-781c-4d0b-9fbe-df565dd5c3d4" />
+        <generalsInternal>
+          <generalization Id="3326ba40-fbe2-4d2f-bea3-00b894e57e90" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="574c8bb3-4831-4152-acad-1a8378a53431" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c45a9a24-24cc-4e21-9597-cc64720fd4f0" name="BetDontPassLine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="fc8512d9-9905-4898-9d75-641991c52593" />
+        <generalsInternal>
+          <generalization Id="38f9f6fc-66a3-4839-a8a0-1d568484a44a" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="714e9fce-4709-4fc4-a012-c9185e12b918" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="2c4c9740-4625-41e6-af42-49a655ea0254" name="BetCome" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ecdebd61-fca5-4e01-9550-4697fec51bd1" />
+        <generalsInternal>
+          <generalization Id="401964ee-dbb1-4692-85b9-fbfd9577682b" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="6c4490bd-3b3c-4d66-83f0-2eac1ce5e4fe" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="a1f6a7a7-2d96-4726-a2b9-e12e83713aa3" name="BetDontCome" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ee84d772-dfd2-4fa9-bdf6-3b2c92cde5a9" />
+        <generalsInternal>
+          <generalization Id="ed232f60-aff2-4811-8792-22d415578a6f" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="6dcc2723-4094-4a18-8763-f4e0820e8011" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="eb8fd714-1645-4065-8fe9-3762981bba2a" name="BetSnakeEyes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="3b1d30c2-b101-4d43-a25d-8f9d22ea469d" />
+        <generalsInternal>
+          <generalization Id="1f58c6b9-8f9b-4f72-922b-d78e5da817c4" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="c00d06e2-9d78-440e-b90e-43a76d8e7620" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="43c6c61b-b3f7-495f-9ade-cd5e78ea2e1e" name="BetAceDeuce" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="7f93c17e-fb74-4526-8b90-6f3bbd5b1625" />
+        <generalsInternal>
+          <generalization Id="0bb8e305-479c-468f-804f-a8a3d74adfc8" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="ea483f51-2abd-4a69-816e-441dd13ec71e" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="02349619-59b4-41ca-bc68-70ca913a0195" name="BetYo" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0f55e5b5-7704-410e-b59e-93cf3e4fe86d" />
+        <generalsInternal>
+          <generalization Id="5a0337c4-69f8-4c8f-90ef-b78a640e2eb1" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="2e3494a3-b553-43c4-819c-cfe94bcf3970" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7ca61e67-3897-40b3-bb17-0b49fd2839f3" name="BetBoxcars" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="dd77c0a5-339d-4285-9b1d-3dd7a2367182" />
+        <generalsInternal>
+          <generalization Id="d585d8de-03ca-421b-a2ff-706e69bfe4de" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="beeaa92d-0853-4fed-b365-1ef37f3582bb" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="f23bf928-2e84-4e7f-9f22-bddf3320816c" name="BetCraps" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f92bb5b3-51dc-4ca7-9eac-7acf29a65787" />
+        <generalsInternal>
+          <generalization Id="5b015063-6878-4842-a387-62341aad07c8" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="4b28d04b-eea9-41d1-8b7c-444da694b6dc" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="409577d0-25ac-44b1-ad20-4368e1253265" name="BetCE" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="547ed5cb-e047-4ff3-ab4b-dce34b79ba7e" />
+        <generalsInternal>
+          <generalization Id="e2f113c9-b8d6-4c89-8348-9b12293f2e67" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="9c5d5341-e01a-49f5-b410-678f28fb45c2" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="cee07037-1b10-40b2-b38b-58502fad62c2" name="BetSeven" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="e2bf2e6f-b089-4814-8148-7f062f21a106" />
+        <generalsInternal>
+          <generalization Id="1b183a41-527d-4496-81aa-15f8da4a99c7" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="7b844464-ca9c-4a3e-8580-cffb721cceb7" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ab984cb5-7688-4353-bd04-8556c214d5a8" name="BetField" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0e9a1220-2903-4ff1-b3dc-45a3a70fb447" />
+        <generalsInternal>
+          <generalization Id="068dcf94-a5c2-4aa5-96d8-2eca5b4f0ea9" isSubstitutable="false">
+            <classMoniker Id="1c1efc62-a9f6-4bc2-809f-03c12541a03b" LastKnownName="Bet" />
+            <elementDefinition Id="f5811339-ddf3-4233-9b2f-07e50333cb52" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="b5af6732-2121-4ac0-9804-328968a4e92f" name="GoF.CasinoCraps.Modeling">
+    <elementDefinition Id="c34c1975-7d88-4088-bc92-209b6e1deeab" />
+    <profileInstances>
+      <packageHasProfileInstances Id="83faeba6-a2a5-4ec1-bce5-b0b88aa06072">
+        <profileInstance Id="4942da99-33eb-4dc9-a2d9-b9a636bd8e3f" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="85b6be55-160c-45bb-85ab-b5e152fb73b0">
+        <profileInstance Id="f482856d-2b96-4fb6-95fd-9031c6b2ebf9" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="07bf77f4-0517-4f98-8ba5-3c2858ed5eb9">
+        <profileInstance Id="a7edee73-61be-4f99-885d-387de3782795" name="CSharpProfile">
+          <elementDefinition Id="c0388611-64d3-4dab-a271-130e01d5310d" />
+        </profileInstance>
+        <elementDefinition Id="670a0c26-849f-4246-9413-9b0cb2d9073d" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</logicalClassDesignerModel>

@@ -18,20 +18,26 @@ namespace GoF.CasinoCraps
         {
             Contract.Requires(string.IsNullOrWhiteSpace(command) == false);
 
+            if (command == "new-game")
+            {
+                rollNumber = 0;
+                return "new game started...";
+            }
+
             string[] items = command.Split(' ');
 
             if (items[0] == "roll")
             {
                 rollNumber++;
 
-                DiceRoll roll;
+                Roll roll;
                 if (items.Count() == 3)
                 {
-                    roll = new DiceRoll(Convert.ToInt32(items[1]), Convert.ToInt32(items[2]));
+                    roll = new Roll(Convert.ToInt32(items[1]), Convert.ToInt32(items[2]));
                 }
                 else
                 {
-                    roll = new DiceRoll();
+                    roll = new Roll();
                 }
                  
                 return string.Format("roll #{0} - [{1}] [{2}] - ({3})", rollNumber, roll.FirstDie, roll.SecondDie, roll.DiceTotal);
