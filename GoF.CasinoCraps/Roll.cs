@@ -9,6 +9,10 @@ namespace GoF.CasinoCraps
     {
         private static readonly Random random = new Random();
 
+        private readonly List<int> CrapsRolls = new List<int> { 2, 3, 12 };
+        private readonly List<int> NaturalRolls = new List<int> { 7, 11 };
+        private readonly List<int> PointRolls = new List<int> { 4, 5, 6, 8, 9, 10 };
+
         private readonly Dictionary<Tuple<int, int>, RollName> rollNames = new Dictionary<Tuple<int, int>, RollName>
         {
             { Tuple.Create(1, 1), RollName.SnakeEyes },
@@ -73,6 +77,30 @@ namespace GoF.CasinoCraps
             get
             {
                 return FirstDie + SecondDie;
+            }
+        }
+
+        public bool IsCraps
+        {
+            get
+            {
+                return CrapsRolls.Contains(DiceTotal);
+            }
+        }
+
+        public bool IsNatural
+        {
+            get
+            {
+                return NaturalRolls.Contains(DiceTotal);
+            }
+        }
+
+        public bool IsPoint
+        {
+            get
+            {
+                return PointRolls.Contains(DiceTotal);
             }
         }
 

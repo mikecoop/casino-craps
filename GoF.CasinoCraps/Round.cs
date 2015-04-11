@@ -11,10 +11,6 @@ namespace GoF.CasinoCraps
     /// </summary>
     public class Round
     {
-        private readonly List<int> CrapsRolls = new List<int> { 2, 3, 12 };
-        private readonly List<int> NaturalRolls = new List<int> { 7, 11 };
-        private readonly List<int> PointRolls = new List<int> { 4, 5, 6, 8, 9, 10 };
-
         /// <summary>
         /// Initializes a new instance of the <see cref="Round"/> class.
         /// </summary>
@@ -37,15 +33,15 @@ namespace GoF.CasinoCraps
 
             if (Phase == RoundPhase.ComeOut)
             {
-                if (CrapsRolls.Contains(roll.DiceTotal))
+                if (roll.IsCraps)
                 {
                     EndRound(RoundResult.Craps);
                 }
-                else if (NaturalRolls.Contains(roll.DiceTotal))
+                else if (roll.IsNatural)
                 {
                     EndRound(RoundResult.Natural);
                 }
-                else if (PointRolls.Contains(roll.DiceTotal))
+                else if (roll.IsPoint)
                 {
                     EstablishPoint(roll);
                 }
