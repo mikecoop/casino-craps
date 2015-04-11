@@ -1,19 +1,32 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-
-namespace GoF.CasinoCraps
+﻿namespace GoF.CasinoCraps
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.Contracts;
+    using System.Linq;
+
+    /// <summary>
+    /// Represents a game of casino craps.
+    /// </summary>
     public class Game
     {
+        /// <summary>
+        /// The current roll number in the game starting from one.
+        /// </summary>
         private int rollNumber;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Game"/> class.
+        /// </summary>
         public Game()
         {
         }
 
+        /// <summary>
+        /// Executes the given command.
+        /// </summary>
+        /// <param name="command">The command to execute.</param>
+        /// <returns>A message with the results of the command.</returns>
         public string Execute(string command)
         {
             Contract.Requires(string.IsNullOrWhiteSpace(command) == false);

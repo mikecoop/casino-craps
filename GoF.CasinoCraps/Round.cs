@@ -1,11 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-using System.Text;
-
-namespace GoF.CasinoCraps
+﻿namespace GoF.CasinoCraps
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.Contracts;
+    using System.Linq;
+
     /// <summary>
     /// Represents a round of play in craps.
     /// </summary>
@@ -19,14 +18,30 @@ namespace GoF.CasinoCraps
             Phase = RoundPhase.ComeOut;
         }
 
+        /// <summary>
+        /// Occurs when a point has been established for the round.
+        /// </summary>
         public event EventHandler PointEstablished;
 
+        /// <summary>
+        /// Occurs when the round ends.
+        /// </summary>
         public event EventHandler<RoundEndedEventArgs> RoundEnded;
 
+        /// <summary>
+        /// Gets the currently established point value. Returns zero if no point has been established.
+        /// </summary>
         public int PointValue { get; private set; }
 
+        /// <summary>
+        /// Gets the current phase of the round.
+        /// </summary>
         public RoundPhase Phase { get; private set; }
 
+        /// <summary>
+        /// Sets the next roll for the round.
+        /// </summary>
+        /// <param name="roll">The next roll to set.</param>
         public void SetNextRoll(Roll roll)
         {
             Contract.Requires(roll != null);

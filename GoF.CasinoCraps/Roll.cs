@@ -1,18 +1,38 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics.Contracts;
-using System.Linq;
-
-namespace GoF.CasinoCraps
+﻿namespace GoF.CasinoCraps
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Diagnostics.Contracts;
+    using System.Linq;
+
+    /// <summary>
+    /// Represents a single roll in a game of casino craps.
+    /// </summary>
     public class Roll
     {
-        private static readonly Random random = new Random();
+        /// <summary>
+        /// Random for generating random dice rolls.
+        /// </summary>
+        private static readonly Random Random = new Random();
 
-        private readonly List<int> CrapsRolls = new List<int> { 2, 3, 12 };
-        private readonly List<int> NaturalRolls = new List<int> { 7, 11 };
-        private readonly List<int> PointRolls = new List<int> { 4, 5, 6, 8, 9, 10 };
+        /// <summary>
+        /// A list of the craps roll values.
+        /// </summary>
+        private readonly List<int> crapsRolls = new List<int> { 2, 3, 12 };
 
+        /// <summary>
+        /// A list of the natural roll values.
+        /// </summary>
+        private readonly List<int> naturalRolls = new List<int> { 7, 11 };
+
+        /// <summary>
+        /// A list of the point roll values.
+        /// </summary>
+        private readonly List<int> pointRolls = new List<int> { 4, 5, 6, 8, 9, 10 };
+
+        /// <summary>
+        /// A dictionary of possible rolls with their associated roll names.
+        /// </summary>
         private readonly Dictionary<Tuple<int, int>, RollName> rollNames = new Dictionary<Tuple<int, int>, RollName>
         {
             { Tuple.Create(1, 1), RollName.SnakeEyes },
@@ -30,12 +50,12 @@ namespace GoF.CasinoCraps
             { Tuple.Create(4, 2), RollName.EasySix },
             { Tuple.Create(5, 1), RollName.EasySix },
             { Tuple.Create(3, 3), RollName.HardSix },
-            { Tuple.Create(1, 6), RollName.Natural },
-            { Tuple.Create(2, 5), RollName.Natural },
-            { Tuple.Create(3, 4), RollName.Natural },
-            { Tuple.Create(4, 3), RollName.Natural },
-            { Tuple.Create(5, 2), RollName.Natural },
-            { Tuple.Create(6, 1), RollName.Natural },
+            { Tuple.Create(1, 6), RollName.NaturalOrSevenOut },
+            { Tuple.Create(2, 5), RollName.NaturalOrSevenOut },
+            { Tuple.Create(3, 4), RollName.NaturalOrSevenOut },
+            { Tuple.Create(4, 3), RollName.NaturalOrSevenOut },
+            { Tuple.Create(5, 2), RollName.NaturalOrSevenOut },
+            { Tuple.Create(6, 1), RollName.NaturalOrSevenOut },
             { Tuple.Create(2, 6), RollName.EasyEight },
             { Tuple.Create(3, 5), RollName.EasyEight },
             { Tuple.Create(5, 3), RollName.EasyEight },
@@ -53,12 +73,20 @@ namespace GoF.CasinoCraps
             { Tuple.Create(6, 6), RollName.Boxcars },
         };
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Roll"/> class.
+        /// </summary>
         public Roll()
         {
             FirstDie = GetRandomDieValue();
             SecondDie = GetRandomDieValue();
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Roll"/> class.
+        /// </summary>
+        /// <param name="firstDie">The first die value.</param>
+        /// <param name="secondDie">The second die value.</param>
         public Roll(int firstDie, int secondDie)
         {
             Contract.Requires(1 <= firstDie && firstDie <= 6);
@@ -68,10 +96,19 @@ namespace GoF.CasinoCraps
             SecondDie = secondDie;
         }
 
+        /// <summary>
+        /// Gets the first die value.
+        /// </summary>
         public int FirstDie { get; private set; }
 
+        /// <summary>
+        /// Gets the second die value.
+        /// </summary>
         public int SecondDie { get; private set; }
 
+        /// <summary>
+        /// Gets the total value of the two dice.
+        /// </summary>
         public int DiceTotal
         {
             get
@@ -80,30 +117,42 @@ namespace GoF.CasinoCraps
             }
         }
 
+        /// <summary>
+        /// Gets a value indicating whether the current roll is a craps value.
+        /// </summary>
         public bool IsCraps
         {
             get
             {
-                return CrapsRolls.Contains(DiceTotal);
+                return crapsRolls.Contains(DiceTotal);
             }
         }
 
+        /// <summary>
+        /// Gets a value indicating whether the current roll is a natural value.
+        /// </summary>
         public bool IsNatural
         {
             get
             {
-                return NaturalRolls.Contains(DiceTotal);
+                return naturalRolls.Contains(DiceTotal);
             }
         }
 
+        /// <summary>
+        /// Gets a value indicating whether the current roll is a point value.
+        /// </summary>
         public bool IsPoint
         {
             get
             {
-                return PointRolls.Contains(DiceTotal);
+                return pointRolls.Contains(DiceTotal);
             }
         }
 
+        /// <summary>
+        /// Gets the craps slang name of the current roll.
+        /// </summary>
         public RollName Name
         {
             get
@@ -118,9 +167,13 @@ namespace GoF.CasinoCraps
             }
         }
 
+        /// <summary>
+        /// Gets a random die value from one to six.
+        /// </summary>
+        /// <returns>A random die value.</returns>
         private int GetRandomDieValue()
         {
-            return random.Next(1, 7);
+            return Random.Next(1, 7);
         }
     }
 }

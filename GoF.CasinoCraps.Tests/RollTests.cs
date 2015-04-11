@@ -106,22 +106,22 @@ namespace GoF.CasinoCraps.Tests
         public void Name_GivenSeven_ReturnsCorrectName()
         {
             Roll roll = new Roll(1, 6);
-            roll.Name.Should().Be(RollName.Natural);
+            roll.Name.Should().Be(RollName.NaturalOrSevenOut);
 
             roll = new Roll(2, 5);
-            roll.Name.Should().Be(RollName.Natural);
+            roll.Name.Should().Be(RollName.NaturalOrSevenOut);
 
             roll = new Roll(3, 4);
-            roll.Name.Should().Be(RollName.Natural);
+            roll.Name.Should().Be(RollName.NaturalOrSevenOut);
 
             roll = new Roll(4, 3);
-            roll.Name.Should().Be(RollName.Natural);
+            roll.Name.Should().Be(RollName.NaturalOrSevenOut);
 
             roll = new Roll(5, 2);
-            roll.Name.Should().Be(RollName.Natural);
+            roll.Name.Should().Be(RollName.NaturalOrSevenOut);
 
             roll = new Roll(6, 1);
-            roll.Name.Should().Be(RollName.Natural);
+            roll.Name.Should().Be(RollName.NaturalOrSevenOut);
         }
 
         [Test]
