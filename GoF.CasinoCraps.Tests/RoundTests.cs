@@ -224,5 +224,22 @@ namespace GoF.CasinoCraps.Tests
                 .WithSender(round)
                 .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.PointHit);
         }
+
+        [Test]
+        public void Reset_RoundEnded_RoundIsReset()
+        {
+            Round round = new Round();
+
+            round.SetNextRoll(new Roll(8, 1));
+            round.SetNextRoll(new Roll(8, 1));
+
+            round.Phase.Should().Be(RoundPhase.Point);
+            round.PointValue.Should().Be(9);
+
+            round.Reset();
+
+            round.Phase.Should().Be(RoundPhase.ComeOut);
+            round.PointValue.Should().Be(0);
+        }
     }
 }

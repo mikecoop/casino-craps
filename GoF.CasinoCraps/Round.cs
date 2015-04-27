@@ -74,6 +74,15 @@
             }
         }
 
+        /// <summary>
+        /// Resets the round to initial values.
+        /// </summary>
+        public void Reset()
+        {
+            Phase = RoundPhase.ComeOut;
+            PointValue = 0;
+        }
+
         private void EstablishPoint(Roll roll)
         {
             if (PointEstablished != null)

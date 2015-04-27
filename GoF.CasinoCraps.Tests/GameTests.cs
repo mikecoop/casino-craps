@@ -60,5 +60,34 @@ namespace GoF.CasinoCraps.Tests
 
             output.Should().Be("roll #1 - [1] [6] - (7)");
         }
+
+        [Test]
+        public void RollNumber_WhenCreated_IsOne()
+        {
+            game.RollNumber.Should().Be(1);
+        }
+
+        [Test]
+        public void RoundNumber_WhenCreated_IsOne()
+        {
+            game.RoundNumber.Should().Be(1);
+        }
+
+        [Test]
+        public void RoundNumber_RoundEnded_IsIncremented()
+        {
+            game.Execute("roll 1 6");
+
+            game.RoundNumber.Should().Be(2);
+        }
+
+        [Test]
+        public void RoundNumber_RoundEndedTwice_IsIncremented()
+        {
+            game.Execute("roll 1 6");
+            game.Execute("roll 6 6");
+
+            game.RoundNumber.Should().Be(3);
+        }
     }
 }
