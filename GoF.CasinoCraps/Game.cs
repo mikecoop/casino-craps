@@ -34,6 +34,39 @@
         public int RoundNumber { get; private set; }
 
         /// <summary>
+        /// Restarts the game.
+        /// </summary>
+        public void Restart()
+        {
+            RollNumber = 1;
+            RoundNumber = 1;
+            round.Reset();
+        }
+
+        /// <summary>
+        /// Rolls the dice for the current game.
+        /// </summary>
+        /// <returns>The new roll.</returns>
+        public Roll RollDice()
+        {
+            return SetNextRoll(new Roll());
+        }
+
+        /// <summary>
+        /// Rolls the dice and sets the to the given values.
+        /// </summary>
+        /// <param name="firstDie">The first die value.</param>
+        /// <param name="secondDie">The second die value.</param>
+        /// <returns>The new roll.</returns>
+        public Roll RollDice(int firstDie, int secondDie)
+        {
+            Contract.Requires(1 <= firstDie && firstDie <= 6);
+            Contract.Requires(1 <= secondDie && secondDie <= 6);
+
+            return SetNextRoll(new Roll(firstDie, secondDie));
+        }
+
+        /// <summary>
         /// Executes the given command.
         /// </summary>
         /// <param name="command">The command to execute.</param>
@@ -44,7 +77,7 @@
 
             if (command == "new-game")
             {
-                RollNumber = 1;
+                Restart();
                 return "new game started...";
             }
 
@@ -53,9 +86,15 @@
             if (items[0] == "roll")
             {
                 int currentRollNumber = RollNumber;
-                RollNumber++;
-                Roll roll = GetRoll(items);
-                round.SetNextRoll(roll);
+                Roll roll;
+                if (items.Count() == 3)
+                {
+                    roll = RollDice(Convert.ToInt32(items[1]), Convert.ToInt32(items[2]));
+                }
+                else
+                {
+                    roll = RollDice();
+                }
 
                 return string.Format("roll #{0} - [{1}] [{2}] - ({3})", currentRollNumber, roll.FirstDie, roll.SecondDie, roll.DiceTotal);
             }
@@ -63,18 +102,12 @@
             return "unknown command";
         }
 
-        private Roll GetRoll(string[] items)
+        private Roll SetNextRoll(Roll roll)
         {
-            Roll roll;
-            if (items.Count() == 3)
-            {
-                roll = new Roll(Convert.ToInt32(items[1]), Convert.ToInt32(items[2]));
-            }
-            else
-            {
-                roll = new Roll();
-            }
+            Contract.Requires(roll != null);
 
+            RollNumber++;
+            round.SetNextRoll(roll);
             return roll;
         }
 

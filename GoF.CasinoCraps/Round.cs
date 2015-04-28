@@ -85,6 +85,8 @@
 
         private void EstablishPoint(Roll roll)
         {
+            Contract.Requires(roll != null);
+
             if (PointEstablished != null)
             {
                 PointEstablished(this, new EventArgs());
