@@ -53,7 +53,7 @@
         }
 
         /// <summary>
-        /// Rolls the dice and sets the to the given values.
+        /// Rolls the dice and sets them to the given values.
         /// </summary>
         /// <param name="firstDie">The first die value.</param>
         /// <param name="secondDie">The second die value.</param>
@@ -64,42 +64,6 @@
             Contract.Requires(1 <= secondDie && secondDie <= 6);
 
             return SetNextRoll(new Roll(firstDie, secondDie));
-        }
-
-        /// <summary>
-        /// Executes the given command.
-        /// </summary>
-        /// <param name="command">The command to execute.</param>
-        /// <returns>A message with the results of the command.</returns>
-        public string Execute(string command)
-        {
-            Contract.Requires(string.IsNullOrWhiteSpace(command) == false);
-
-            if (command == "new-game")
-            {
-                Restart();
-                return "new game started...";
-            }
-
-            string[] items = command.Split(' ');
-
-            if (items[0] == "roll")
-            {
-                int currentRollNumber = RollNumber;
-                Roll roll;
-                if (items.Count() == 3)
-                {
-                    roll = RollDice(Convert.ToInt32(items[1]), Convert.ToInt32(items[2]));
-                }
-                else
-                {
-                    roll = RollDice();
-                }
-
-                return string.Format("roll #{0} - [{1}] [{2}] - ({3})", currentRollNumber, roll.FirstDie, roll.SecondDie, roll.DiceTotal);
-            }
-
-            return "unknown command";
         }
 
         private Roll SetNextRoll(Roll roll)
