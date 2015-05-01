@@ -71,5 +71,13 @@ namespace GoF.CasinoCraps.Tests
 
             bet.PayoutAmount.Should().Be(100);
         }
+
+        [Test]
+        public void PayoutAmount_BetWon_ReturnsCorrectAmount()
+        {
+            bet.RoundEnded(new RoundEndedEventArgs(RoundResult.Craps, new Roll(1, 1)));
+
+            bet.PayoutAmount.Should().Be(200);
+        }
     }
 }

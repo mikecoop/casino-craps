@@ -8,11 +8,12 @@
     /// <summary>
     /// Represents a game of casino craps.
     /// </summary>
-    public class Game
+    public class Game : IGame
     {
         private readonly Round round;
         private readonly List<Bet> activeBets;
         private readonly List<Bet> completedBets;
+        private int betNumber = 1;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Game"/> class.
@@ -80,9 +81,6 @@
         /// <returns>The new roll.</returns>
         public Roll RollDice(int firstDie, int secondDie)
         {
-            Contract.Requires(1 <= firstDie && firstDie <= 6);
-            Contract.Requires(1 <= secondDie && secondDie <= 6);
-
             return SetNextRoll(new Roll(firstDie, secondDie));
         }
 
@@ -92,6 +90,8 @@
         /// <param name="bet">The bet to place.</param>
         public void PlaceBet(Bet bet)
         {
+            bet.SetId(betNumber);
+            betNumber++;
             activeBets.Add(bet);
         }
 
@@ -102,13 +102,24 @@
             RollNumber++;
             round.SetNextRoll(roll);
 
+            foreach (var bet in activeBets)
+            {
+                bet.DiceRolled(roll);
+            }
+
             var nonActiveBets = (from b in activeBets
                                 where b.Status != BetStatus.Active
                                 select b).ToList();
 
+            completedBets.Clear();
+
             foreach (var bet in nonActiveBets)
             {
                 activeBets.Remove(bet);
+                if (bet.Player != null)
+                {
+                    bet.Player.AddMoney(bet.PayoutAmount);
+                }
                 completedBets.Add(bet);
             }
 

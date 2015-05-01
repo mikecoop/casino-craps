@@ -156,5 +156,17 @@ namespace GoF.CasinoCraps.Tests
 
             game.CompletedBets.Count().Should().Be(1);
         }
+
+        [Test]
+        public void CompletedBets_NextRoll_BetIsRemoved()
+        {
+            game.PlaceBet(new PassLineBet(100));
+
+            game.RollDice(1, 6);
+
+            game.RollDice();
+
+            game.CompletedBets.Count().Should().Be(0);
+        }
     }
 }

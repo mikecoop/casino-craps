@@ -20,10 +20,13 @@ namespace GoF.CasinoCraps
             get { return 1; }
         }
 
+        public override void DiceRolled(Roll roll)
+        {
+            // Do nothing.
+        }
+
         public override void RoundEnded(RoundEndedEventArgs args)
         {
-            Contract.Requires(args != null);
-
             switch (args.Result)
             {
                 case RoundResult.Craps:

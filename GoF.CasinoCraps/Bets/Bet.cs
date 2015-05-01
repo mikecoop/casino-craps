@@ -15,11 +15,15 @@ namespace GoF.CasinoCraps
             Amount = amount;
         }
 
+        public int Id { get; private set; }
+
+        public Player Player { get; private set; }
+
         public BetStatus Status { get; protected set; }
 
         public int Amount { get; protected set; }
 
-        public Decimal PayoutAmount
+        public int PayoutAmount
         {
             get
             {
@@ -38,6 +42,18 @@ namespace GoF.CasinoCraps
 
         public abstract int Odds { get; }
 
+        public abstract void DiceRolled(Roll roll);
+
         public abstract void RoundEnded(RoundEndedEventArgs args);
+
+        public void SetPlayer(Player player)
+        {
+            Player = player;
+        }
+
+        public void SetId(int id)
+        {
+            Id = id;
+        }
     }
 }
