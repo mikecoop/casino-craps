@@ -85,7 +85,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bets\Bet.cs" />
+    <Compile Include="Bets\BetStatus.cs" />
     <Compile Include="ConsoleGame.cs" />
+    <Compile Include="Bets\DontPassBet.cs" />
+    <Compile Include="Bets\PassLineBet.cs" />
     <Compile Include="Roll.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

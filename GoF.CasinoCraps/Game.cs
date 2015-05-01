@@ -11,6 +11,7 @@
     public class Game
     {
         private readonly Round round;
+        private readonly List<Bet> activeBets;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Game"/> class.
@@ -21,6 +22,7 @@
             RoundNumber = 1;
             round = new Round();
             round.RoundEnded += RoundEnded;
+            activeBets = new List<Bet>();
         }
 
         /// <summary>
@@ -32,6 +34,14 @@
         /// Gets the current round number for the game.
         /// </summary>
         public int RoundNumber { get; private set; }
+
+        public IEnumerable<Bet> ActiveBets
+        {
+            get
+            {
+                return activeBets;
+            }
+        }
 
         /// <summary>
         /// Restarts the game.
@@ -64,6 +74,15 @@
             Contract.Requires(1 <= secondDie && secondDie <= 6);
 
             return SetNextRoll(new Roll(firstDie, secondDie));
+        }
+
+        /// <summary>
+        /// Places a bet for the current game.
+        /// </summary>
+        /// <param name="bet">The bet to place.</param>
+        public void PlaceBet(Bet bet)
+        {
+            activeBets.Add(bet);
         }
 
         private Roll SetNextRoll(Roll roll)

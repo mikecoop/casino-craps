@@ -118,5 +118,13 @@ namespace GoF.CasinoCraps.Tests
 
             game.RoundNumber.Should().Be(1);
         }
+
+        [Test]
+        public void PlaceBet_GivenBet_BetIsPlaced()
+        {
+            game.PlaceBet(new PassLineBet());
+
+            game.ActiveBets.Count().Should().Be(1);
+        }
     }
 }
