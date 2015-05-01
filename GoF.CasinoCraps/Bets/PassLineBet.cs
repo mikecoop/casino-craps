@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,9 +12,21 @@ namespace GoF.CasinoCraps
     /// </summary>
     public class PassLineBet : Bet
     {
-        public void RoundEnded(RoundResult result)
+        public PassLineBet(int amount)
+            : base(amount)
         {
-            switch (result)
+        }
+
+        public override int Odds
+        {
+            get { return 1; }
+        }
+
+        public override void RoundEnded(RoundEndedEventArgs args)
+        {
+            Contract.Requires(args != null);
+
+            switch (args.Result)
             {
                 case RoundResult.Craps:
                     Status = BetStatus.Lost;

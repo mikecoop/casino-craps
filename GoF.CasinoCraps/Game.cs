@@ -12,6 +12,7 @@
     {
         private readonly Round round;
         private readonly List<Bet> activeBets;
+        private readonly List<Bet> completedBets;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Game"/> class.
@@ -23,6 +24,7 @@
             round = new Round();
             round.RoundEnded += RoundEnded;
             activeBets = new List<Bet>();
+            completedBets = new List<Bet>();
         }
 
         /// <summary>
@@ -40,6 +42,14 @@
             get
             {
                 return activeBets;
+            }
+        }
+
+        public IEnumerable<Bet> CompletedBets
+        {
+            get
+            {
+                return completedBets;
             }
         }
 
@@ -91,11 +101,26 @@
 
             RollNumber++;
             round.SetNextRoll(roll);
+
+            var nonActiveBets = (from b in activeBets
+                                where b.Status != BetStatus.Active
+                                select b).ToList();
+
+            foreach (var bet in nonActiveBets)
+            {
+                activeBets.Remove(bet);
+                completedBets.Add(bet);
+            }
+
             return roll;
         }
 
         private void RoundEnded(object sender, RoundEndedEventArgs e)
         {
+            foreach (var bet in ActiveBets)
+            {
+                bet.RoundEnded(e);
+            }
             round.Reset();
             RoundNumber++;
         }

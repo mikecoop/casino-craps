@@ -49,6 +49,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ConsoleGameTests.cs" />
+    <Compile Include="DontPassBetTests.cs" />
     <Compile Include="PassLineBetTests.cs" />
     <Compile Include="RollTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

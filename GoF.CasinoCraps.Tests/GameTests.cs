@@ -122,9 +122,39 @@ namespace GoF.CasinoCraps.Tests
         [Test]
         public void PlaceBet_GivenBet_BetIsPlaced()
         {
-            game.PlaceBet(new PassLineBet());
+            game.PlaceBet(new PassLineBet(100));
 
             game.ActiveBets.Count().Should().Be(1);
+        }
+
+        [Test]
+        public void CompletedBets_BetLost_BetIsAdded()
+        {
+            game.PlaceBet(new PassLineBet(100));
+
+            game.RollDice(1, 6);
+
+            game.CompletedBets.Count().Should().Be(1);
+        }
+
+        [Test]
+        public void ActiveBets_BetLost_BetIsRemoved()
+        {
+            game.PlaceBet(new PassLineBet(100));
+
+            game.RollDice(1, 6);
+
+            game.ActiveBets.Count().Should().Be(0);
+        }
+
+        [Test]
+        public void CompletedBets_BetPushed_BetIsAdded()
+        {
+            game.PlaceBet(new DontPassBet(200));
+
+            game.RollDice(6, 6);
+
+            game.CompletedBets.Count().Should().Be(1);
         }
     }
 }

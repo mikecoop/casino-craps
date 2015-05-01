@@ -9,6 +9,7 @@ namespace GoF.CasinoCraps
     {
         Active = 1,
         Lost = 2,
-        Won = 3
+        Won = 3,
+        Push = 4
     }
 }
