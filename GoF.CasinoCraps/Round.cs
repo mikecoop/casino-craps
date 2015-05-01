@@ -50,11 +50,11 @@
             {
                 if (roll.IsCraps)
                 {
-                    EndRound(RoundResult.Craps);
+                    EndRound(RoundResult.Craps, roll);  
                 }
                 else if (roll.IsNatural)
                 {
-                    EndRound(RoundResult.Natural);
+                    EndRound(RoundResult.Natural, roll);
                 }
                 else if (roll.IsPoint)
                 {
@@ -65,11 +65,11 @@
             {
                 if (roll.DiceTotal == 7)
                 {
-                    EndRound(RoundResult.SevenOut);
+                    EndRound(RoundResult.SevenOut, roll);
                 }
                 else if (roll.DiceTotal == PointValue)
                 {
-                    EndRound(RoundResult.PointHit);
+                    EndRound(RoundResult.PointHit, roll);
                 }
             }
         }
@@ -96,11 +96,11 @@
             PointValue = roll.DiceTotal;
         }
 
-        private void EndRound(RoundResult result)
+        private void EndRound(RoundResult result, Roll roll)
         {
             if (RoundEnded != null)
             {
-                RoundEnded(this, new RoundEndedEventArgs(result));
+                RoundEnded(this, new RoundEndedEventArgs(result, roll));
             }
         }
     }
