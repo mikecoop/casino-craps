@@ -55,12 +55,15 @@
     <Compile Include="BetTests.cs" />
     <Compile Include="CAndEBetTests.cs" />
     <Compile Include="DontPassBetTests.cs" />
+    <Compile Include="FieldBetTests.cs" />
     <Compile Include="PassLineBetTests.cs" />
     <Compile Include="PlayerTests.cs" />
     <Compile Include="RollTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="GameTests.cs" />
     <Compile Include="RoundTests.cs" />
+    <Compile Include="TheHornBetTests.cs" />
+    <Compile Include="WhirlBetTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

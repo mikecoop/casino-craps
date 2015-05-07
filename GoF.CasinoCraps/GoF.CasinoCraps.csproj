@@ -96,6 +96,7 @@
     <Compile Include="Bets\YoBet.cs" />
     <Compile Include="Bets\DontPassBet.cs" />
     <Compile Include="Bets\PassLineBet.cs" />
+    <Compile Include="Bets\FieldBet.cs" />
     <Compile Include="IGame.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Roll.cs" />
@@ -107,6 +108,8 @@
     <Compile Include="RoundPhase.cs" />
     <Compile Include="RoundResult.cs" />
     <Compile Include="Bets\SnakeEyesBet.cs" />
+    <Compile Include="Bets\TheHornBet.cs" />
+    <Compile Include="Bets\WhirlBet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

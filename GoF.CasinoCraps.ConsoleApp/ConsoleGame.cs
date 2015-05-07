@@ -136,6 +136,15 @@
                 case "dont-pass":
                     bet = new PassLineBet(amount);
                     break;
+                case "field":
+                    bet = new FieldBet(amount);
+                    break;
+                case "the-horn":
+                    bet = new TheHornBet(amount);
+                    break;
+                case "whirl":
+                    bet = new WhirlBet(amount);
+                    break;
                 default:
                     throw new ArgumentException("Bet name");
             }
