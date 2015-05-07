@@ -13,6 +13,7 @@
         /// Initializes a new instance of the <see cref="RoundEndedEventArgs"/> class.
         /// </summary>
         /// <param name="result">The result of the round.</param>
+        /// <param name="roll">The last roll of the round.</param>
         public RoundEndedEventArgs(RoundResult result, Roll roll)
         {
             Result = result;
@@ -24,6 +25,9 @@
         /// </summary>
         public RoundResult Result { get; private set; }
 
+        /// <summary>
+        /// Gets the last roll of the round.
+        /// </summary>
         public Roll Roll { get; private set;}
     }
 }
