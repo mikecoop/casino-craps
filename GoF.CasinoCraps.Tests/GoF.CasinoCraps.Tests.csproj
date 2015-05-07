@@ -53,6 +53,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BetTests.cs" />
+    <Compile Include="BigEightBetTests.cs" />
+    <Compile Include="BigSixBetTests.cs" />
     <Compile Include="CAndEBetTests.cs" />
     <Compile Include="DontPassBetTests.cs" />
     <Compile Include="FieldBetTests.cs" />

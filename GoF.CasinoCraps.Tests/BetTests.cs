@@ -414,5 +414,15 @@ namespace GoF.CasinoCraps.Tests
 
             bet.Id.Should().Be(2);
         }
+
+        [Test]
+        public void Status_AnySevenBetSixRolled_IsLost()
+        {
+            game.PlaceBet(new AnySevenBet(1));
+
+            game.RollDice(3, 3);
+
+            game.CompletedBets.First().Status.Should().Be(BetStatus.Lost);
+        }
     }
 }

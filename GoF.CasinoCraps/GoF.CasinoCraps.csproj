@@ -97,6 +97,8 @@
     <Compile Include="Bets\DontPassBet.cs" />
     <Compile Include="Bets\PassLineBet.cs" />
     <Compile Include="Bets\FieldBet.cs" />
+    <Compile Include="Bets\BigSixBet.cs" />
+    <Compile Include="Bets\BigEightBet.cs" />
     <Compile Include="IGame.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Roll.cs" />
