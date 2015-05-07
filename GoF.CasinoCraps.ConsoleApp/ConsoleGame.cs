@@ -145,6 +145,18 @@
                 case "whirl":
                     bet = new WhirlBet(amount);
                     break;
+                case "big-six":
+                    bet = new BigSixBet(amount);
+                    break;
+                case "big-eight":
+                    bet = new BigEightBet(amount);
+                    break;
+                case "come":
+                    bet = new ComeBet(amount);
+                    break;
+                case "dont-come":
+                    bet = new DontComeBet(amount);
+                    break;
                 default:
                     throw new ArgumentException("Bet name");
             }
