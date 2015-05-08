@@ -8,7 +8,7 @@
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>GoF.CasinoCraps.ConsoleApp</RootNamespace>
-    <AssemblyName>GoF.CasinoCraps.ConsoleApp</AssemblyName>
+    <AssemblyName>CasinoCrapsConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
