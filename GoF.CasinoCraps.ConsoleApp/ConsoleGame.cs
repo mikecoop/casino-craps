@@ -57,6 +57,18 @@
 
             string[] items = command.Split(' ');
 
+            try
+            {
+                ExecuteCommand(items);
+            }
+            catch (CrapsException ex)
+            {
+                writeOutput(ex.Message);
+            }
+        }
+
+        private void ExecuteCommand(string[] items)
+        {
             if (items[0] == "roll")
             {
                 RollDice(items);
@@ -65,20 +77,19 @@
                 {
                     writeOutput(string.Format("Bet Completed: #{0}, Name: {1}, Status: {2}, Payout: ${3}", bet.Id, typeof(Bet).Name, Enum.GetName(typeof(BetStatus), bet.Status), bet.PayoutAmount));
                 }
-                return;
             }
             else if (items[0] == "place-bet")
             {
                 PlaceBet(items);
-                return;
             }
             else if (items[0] == "current-money")
             {
                 writeOutput(string.Format("Current money is ${0}", player.Money));
-                return;
             }
-
-            writeOutput("unknown command");
+            else
+            {
+                writeOutput("unknown command");
+            }
         }
 
         private void RollDice(string[] items)

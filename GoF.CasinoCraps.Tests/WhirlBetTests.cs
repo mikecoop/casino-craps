@@ -138,5 +138,14 @@ namespace GoF.CasinoCraps.Tests
 
             bet.PayoutAmount.Should().Be(1);
         }
+
+        [Test]
+        public void Amount_NotDivisibleByFive_ThrowsException()
+        {
+            Action act = () => new WhirlBet(4);
+
+            act.ShouldThrow<BetAmountException>()
+                .WithMessage("Amount must be divisible by 5");
+        }
     }
 }

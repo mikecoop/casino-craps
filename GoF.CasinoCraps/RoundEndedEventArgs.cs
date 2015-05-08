@@ -28,6 +28,6 @@
         /// <summary>
         /// Gets the last roll of the round.
         /// </summary>
-        public Roll Roll { get; private set;}
+        public Roll Roll { get; private set; }
     }
 }

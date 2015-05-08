@@ -52,6 +52,11 @@
         /// <param name="bet">The bet to place.</param>
         public void PlaceBet(Bet bet)
         {
+            if (bet.Amount > Money)
+            {
+                throw new BetAmountException("Insufficient funds for bet");
+            }
+
             bet.SetPlayer(this);
             Money -= bet.Amount;
             Game.PlaceBet(bet);

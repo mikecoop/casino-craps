@@ -38,6 +38,9 @@
         /// </summary>
         public int RoundNumber { get; private set; }
 
+        /// <summary>
+        /// Gets the currently active bets for the game.
+        /// </summary>
         public IEnumerable<Bet> ActiveBets
         {
             get
@@ -46,6 +49,9 @@
             }
         }
 
+        /// <summary>
+        /// Gets the completed bets for the game.
+        /// </summary>
         public IEnumerable<Bet> CompletedBets
         {
             get
@@ -120,6 +126,7 @@
                 {
                     bet.Player.AddMoney(bet.PayoutAmount);
                 }
+
                 completedBets.Add(bet);
             }
 
@@ -132,6 +139,7 @@
             {
                 bet.RoundEnded(e);
             }
+
             round.Reset();
             RoundNumber++;
         }

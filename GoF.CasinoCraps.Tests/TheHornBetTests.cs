@@ -114,5 +114,14 @@ namespace GoF.CasinoCraps.Tests
 
             bet.PayoutAmount.Should().Be(28);
         }
+
+        [Test]
+        public void Amount_NotDivisibleByTwo_ThrowsException()
+        {
+            Action act = () => new TheHornBet(5);
+
+            act.ShouldThrow<BetAmountException>()
+                .WithMessage("Amount must be divisible by 4");
+        }
     }
 }

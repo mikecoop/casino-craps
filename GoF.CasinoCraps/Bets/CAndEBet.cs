@@ -5,7 +5,7 @@
     using System.Linq;
 
     /// <summary>
-    /// Represents a C&E bet in craps.
+    /// Represents a C and E bet in craps.
     /// </summary>
     public class CAndEBet : Bet
     {
@@ -18,6 +18,11 @@
         public CAndEBet(int amount)
             : base(Convert.ToInt32(amount / 2))
         {
+            if (amount % 2 != 0)
+            {
+                throw new BetAmountException("Amount must be divisible by 2");
+            }
+
             odds = 0;
         }
 

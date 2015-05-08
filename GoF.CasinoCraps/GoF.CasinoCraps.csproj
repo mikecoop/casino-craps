@@ -85,6 +85,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bets\BetAmountException.cs" />
     <Compile Include="Bets\AceDeuceBet.cs" />
     <Compile Include="Bets\AnyCrapsBet.cs" />
     <Compile Include="Bets\AnySevenBet.cs" />
@@ -101,6 +102,7 @@
     <Compile Include="Bets\BigEightBet.cs" />
     <Compile Include="Bets\ComeBet.cs" />
     <Compile Include="Bets\DontComeBet.cs" />
+    <Compile Include="CrapsException.cs" />
     <Compile Include="IGame.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Roll.cs" />

@@ -13,7 +13,8 @@
         /// Initializes a new instance of the <see cref="BigEightBet"/> class.
         /// </summary>
         /// <param name="amount">The amount of the bet.</param>
-        public BigEightBet(int amount): base(amount)
+        public BigEightBet(int amount)
+            : base(amount)
         {
         }
 

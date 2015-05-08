@@ -68,5 +68,20 @@ namespace GoF.CasinoCraps.Tests
 
             player.Money.Should().Be(4000);
         }
+
+        [Test]
+        public void PlaceBet_BetMoreThanHas_ThrowsException()
+        {
+            Player player = new Player(3000);
+
+            Game game = new Game();
+
+            player.JoinGame(game);
+
+            Action act = () => player.PlaceBet(new PassLineBet(5000));
+
+            act.ShouldThrow<BetAmountException>()
+                .WithMessage("Insufficient funds for bet");
+        }
     }
 }

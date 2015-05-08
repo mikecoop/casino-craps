@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using NUnit.Framework;
 using FluentAssertions;
+using GoF.CasinoCraps;
 
 namespace GoF.CasinoCraps.Tests
 {
@@ -88,6 +89,15 @@ namespace GoF.CasinoCraps.Tests
             Bet bet = game.CompletedBets.First();
 
             bet.PayoutAmount.Should().Be(0);
+        }
+
+        [Test]
+        public void Amount_NotDivisibleByFour_ThrowsException()
+        {
+            Action act = () => new CAndEBet(5);
+
+            act.ShouldThrow<BetAmountException>()
+                .WithMessage("Amount must be divisible by 2");
         }
     }
 }

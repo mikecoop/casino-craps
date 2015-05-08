@@ -4,18 +4,29 @@ namespace GoF.CasinoCraps
     using System.Collections.Generic;
     using System.Linq;
 
+    /// <summary>
+    /// Represents a craps game.
+    /// </summary>
     public interface IGame
     {
         /// <summary>
         /// Gets the current roll number for the game.
         /// </summary>
         int RollNumber { get; }
+
         /// <summary>
         /// Gets the current round number for the game.
         /// </summary>
         int RoundNumber { get; }
+
+        /// <summary>
+        /// Gets the active bets for the game.
+        /// </summary>
         IEnumerable<Bet> ActiveBets { get; }
 
+        /// <summary>
+        /// Gets the completed bets for the game.
+        /// </summary>
         IEnumerable<Bet> CompletedBets { get; }
 
         /// <summary>
@@ -44,4 +55,3 @@ namespace GoF.CasinoCraps
         void PlaceBet(Bet bet);
     }
 }
-

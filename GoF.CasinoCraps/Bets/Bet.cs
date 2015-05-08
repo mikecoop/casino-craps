@@ -1,9 +1,9 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-
 namespace GoF.CasinoCraps
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
     /// <summary>
     /// Represents a bet in craps.
     /// </summary>
@@ -30,25 +30,25 @@ namespace GoF.CasinoCraps
         public Player Player { get; private set; }
 
         /// <summary>
-        /// Gets the current status of the bet.
+        /// Gets or sets the current status of the bet.
         /// </summary>
         public BetStatus Status { get; protected set; }
 
         /// <summary>
-        /// Gets the amount of the bet.
+        /// Gets or sets the amount of the bet.
         /// </summary>
         public int Amount { get; protected set; }
 
         /// <summary>
-        /// Gets the payout amount of the bet including the intial wager.
+        /// Gets the payout amount of the bet including the initial wager.
         /// </summary>
-        public int PayoutAmount
+        public virtual int PayoutAmount
         {
             get
             {
                 if (Status == BetStatus.Won)
                 {
-                    return Amount + Amount * Odds;
+                    return Amount + Convert.ToInt32(Amount * Odds);
                 }
                 else if (Status == BetStatus.Push)
                 {
