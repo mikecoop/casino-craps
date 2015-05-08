@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a pass line bet.
+    /// (Requirement 3.2.0)
     /// </summary>
     public class PassLineBet : Bet
     {
@@ -37,6 +38,8 @@
 
         /// <summary>
         /// Notifies the bet that the round has ended.
+        /// (Requirement 6.2.1)
+        /// (Requirement 6.3.1)
         /// </summary>
         /// <param name="args">The RoundEndedEventArgs arguments.</param>
         public override void RoundEnded(RoundEndedEventArgs args)
