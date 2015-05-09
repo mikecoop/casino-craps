@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a come bet in craps.
+    /// (Requirement 3.4)
     /// </summary>
     public class ComeBet : Bet
     {
@@ -48,6 +49,8 @@
             // Do nothing.
         }
 
+        //(Requirement 5.2.0)
+        //(Requirement 5.5.0)
         private void PrivateRoundEnded(object sender, RoundEndedEventArgs e)
         {
             switch (e.Result)

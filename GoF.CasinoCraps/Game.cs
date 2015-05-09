@@ -30,6 +30,7 @@
 
         /// <summary>
         /// Gets the current roll number for the game.
+        /// (Requirement 4.2.0)
         /// </summary>
         public int RollNumber { get; private set; }
 
@@ -72,6 +73,8 @@
 
         /// <summary>
         /// Rolls the dice for the current game.
+        /// (Requirement 5.1.0)
+        /// (Requirement 6.1.0)
         /// </summary>
         /// <returns>The new roll.</returns>
         public Roll RollDice()
@@ -92,6 +95,7 @@
 
         /// <summary>
         /// Places a bet for the current game.
+        /// (Requirement 3.0.0)
         /// </summary>
         /// <param name="bet">The bet to place.</param>
         public void PlaceBet(Bet bet)

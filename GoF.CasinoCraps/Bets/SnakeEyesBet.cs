@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a snake-eyes bet in craps.
+    /// (Requirement 3.6.1)
     /// </summary>
     public class SnakeEyesBet : Bet
     {

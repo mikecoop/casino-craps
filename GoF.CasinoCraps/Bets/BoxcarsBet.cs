@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a boxcars bet in craps.
+    /// (Requirement 3.6.4)
     /// </summary>
     public class BoxcarsBet : Bet
     {

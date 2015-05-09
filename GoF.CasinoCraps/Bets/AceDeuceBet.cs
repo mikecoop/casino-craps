@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents an ace-deuce bet in craps.
+    /// (Requirement 3.6.2)
     /// </summary>
     public class AceDeuceBet : Bet
     {
