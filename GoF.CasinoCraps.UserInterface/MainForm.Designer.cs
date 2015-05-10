@@ -38,22 +38,22 @@
             this.betComboBox = new System.Windows.Forms.ComboBox();
             this.betLabel = new System.Windows.Forms.Label();
             this.bettingGroup = new System.Windows.Forms.GroupBox();
+            this.betAmountUpDown = new System.Windows.Forms.NumericUpDown();
             this.rollingGroup = new System.Windows.Forms.GroupBox();
             this.rollDiceButton = new System.Windows.Forms.Button();
             this.secondDiePictureBox = new System.Windows.Forms.PictureBox();
             this.firstDiePictureBox = new System.Windows.Forms.PictureBox();
             this.currentMoneyLabel = new System.Windows.Forms.Label();
             this.crapsLayoutPictureBox = new System.Windows.Forms.PictureBox();
-            this.betAmountUpDown = new System.Windows.Forms.NumericUpDown();
             this.roundInfoLabel = new System.Windows.Forms.Label();
             this.activeBetsGroup.SuspendLayout();
             this.completedBetsGroup.SuspendLayout();
             this.bettingGroup.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.betAmountUpDown)).BeginInit();
             this.rollingGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.secondDiePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstDiePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.crapsLayoutPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.betAmountUpDown)).BeginInit();
             this.SuspendLayout();
             // 
             // activeBetsGroup
@@ -146,6 +146,29 @@
             this.bettingGroup.TabStop = false;
             this.bettingGroup.Text = "Betting";
             // 
+            // betAmountUpDown
+            // 
+            this.betAmountUpDown.Location = new System.Drawing.Point(169, 42);
+            this.betAmountUpDown.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.betAmountUpDown.Minimum = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            this.betAmountUpDown.Name = "betAmountUpDown";
+            this.betAmountUpDown.Size = new System.Drawing.Size(105, 20);
+            this.betAmountUpDown.TabIndex = 8;
+            this.betAmountUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.betAmountUpDown.Value = new decimal(new int[] {
+            1,
+            0,
+            0,
+            0});
+            // 
             // rollingGroup
             // 
             this.rollingGroup.Controls.Add(this.rollDiceButton);
@@ -167,6 +190,7 @@
             this.rollDiceButton.Text = "Roll Dice";
             this.rollDiceButton.UseVisualStyleBackColor = true;
             this.rollDiceButton.Click += new System.EventHandler(this.rollDiceButton_Click);
+            this.rollDiceButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.rollDiceButton_MouseUp);
             // 
             // secondDiePictureBox
             // 
@@ -206,29 +230,6 @@
             this.crapsLayoutPictureBox.TabIndex = 0;
             this.crapsLayoutPictureBox.TabStop = false;
             // 
-            // betAmountUpDown
-            // 
-            this.betAmountUpDown.Location = new System.Drawing.Point(169, 42);
-            this.betAmountUpDown.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.betAmountUpDown.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.betAmountUpDown.Name = "betAmountUpDown";
-            this.betAmountUpDown.Size = new System.Drawing.Size(105, 20);
-            this.betAmountUpDown.TabIndex = 8;
-            this.betAmountUpDown.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            this.betAmountUpDown.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            // 
             // roundInfoLabel
             // 
             this.roundInfoLabel.AutoSize = true;
@@ -259,11 +260,11 @@
             this.completedBetsGroup.ResumeLayout(false);
             this.bettingGroup.ResumeLayout(false);
             this.bettingGroup.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.betAmountUpDown)).EndInit();
             this.rollingGroup.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.secondDiePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.firstDiePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.crapsLayoutPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.betAmountUpDown)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

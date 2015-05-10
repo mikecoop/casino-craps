@@ -29,8 +29,8 @@ namespace GoF.CasinoCraps.UserInterface
             var bets = GetBets();
 
             var betType = (from b in bets
-                       where b.Name.Equals(betName)
-                       select b.GetType()).First();
+                           where b.Name.Equals(betName)
+                           select b.GetType()).First();
 
             var betToPlace = ((Bet)Activator.CreateInstance(betType, Convert.ToInt32(betAmountUpDown.Value)));
 
@@ -131,14 +131,43 @@ namespace GoF.CasinoCraps.UserInterface
         private static List<Bet> GetBets()
         {
             var listOfBets = (from domainAssembly in AppDomain.CurrentDomain.GetAssemblies()
-                                from assemblyType in domainAssembly.GetTypes()
-                                where typeof(Bet).IsAssignableFrom(assemblyType)
-                                select assemblyType).ToList();
+                              from assemblyType in domainAssembly.GetTypes()
+                              where typeof(Bet).IsAssignableFrom(assemblyType)
+                              select assemblyType).ToList();
 
             listOfBets.Remove(typeof(Bet));
 
             List<Bet> bets = listOfBets.ConvertAll<Bet>(t => ((Bet)Activator.CreateInstance(t, 20)));
             return bets;
+        }
+
+        private void rollDiceButton_MouseUp(object sender, MouseEventArgs e)
+        {
+            if (e.Button == System.Windows.Forms.MouseButtons.Right)
+            {
+                using (SetRollForm form = new SetRollForm())
+                {
+                    if (form.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        try
+                        {
+                            Roll roll = player.RollDice(form.FirstDie, form.SecondDie);
+
+                            SetDieImage(firstDiePictureBox, roll.FirstDie);
+                            SetDieImage(secondDiePictureBox, roll.SecondDie);
+
+                            RefreshActiveBets();
+                            RefreshCompletedBets();
+                            RefreshPlayerMoney();
+                            RefreshRoundInfo();
+                        }
+                        catch (CrapsException ex)
+                        {
+                            MessageBox.Show(ex.Message);
+                        }
+                    }
+                }
+            }
         }
     }
 }
