@@ -22,6 +22,11 @@ namespace GoF.CasinoCraps
         }
 
         /// <summary>
+        /// Gets the name of the bet.
+        /// </summary>
+        public abstract string Name { get; }
+
+        /// <summary>
         /// Gets the ID of the bet.
         /// </summary>
         public int Id { get; private set; }
@@ -95,6 +100,18 @@ namespace GoF.CasinoCraps
         public void SetId(int id)
         {
             Id = id;
+        }
+
+        public override string ToString()
+        {
+            if (Status == BetStatus.Active)
+            {
+                return string.Format("{0} ${1}", Name, Amount);
+            }
+            else
+            {
+                return string.Format("{0} {1} - Payout Amount ${2}", Name, Enum.GetName(typeof(BetStatus), Status), PayoutAmount);
+            }
         }
     }
 }

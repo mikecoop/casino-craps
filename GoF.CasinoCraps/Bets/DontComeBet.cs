@@ -24,11 +24,25 @@
         }
 
         /// <summary>
+        /// Gets the name of the bet.
+        /// </summary>
+        public override string Name
+        {
+            get
+            {
+                return "Don't Come";
+            }
+        }
+
+        /// <summary>
         /// Gets the payout odds of the bet.
         /// </summary>
         public override int Odds
         {
-            get { return 1; }
+            get
+            {
+                return 1;
+            }
         }
 
         /// <summary>

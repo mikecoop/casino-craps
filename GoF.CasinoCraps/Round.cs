@@ -105,5 +105,11 @@
                 RoundEnded(this, new RoundEndedEventArgs(result, roll));
             }
         }
+
+        public override string ToString()
+        {
+            string text = Phase == RoundPhase.ComeOut ? "Come Out Phase" : string.Format("Point is {0}", PointValue);
+            return text;
+        }
     }
 }

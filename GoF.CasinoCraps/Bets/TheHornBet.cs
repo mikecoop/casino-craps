@@ -27,6 +27,17 @@
         }
 
         /// <summary>
+        /// Gets the name of the bet.
+        /// </summary>
+        public override string Name
+        {
+            get
+            {
+                return "The Horn";
+            }
+        }
+
+        /// <summary>
         /// Gets the payout odds of the bet.
         /// </summary>
         public override int Odds

@@ -71,6 +71,11 @@
         /// <returns>The resulting roll.</returns>
         public Roll RollDice()
         {
+            if (Game.ActiveBets.Count() == 0)
+            {
+                throw new CrapsException("You must have at least one active bet to roll");
+            }
+
             return Game.RollDice();
         }
 

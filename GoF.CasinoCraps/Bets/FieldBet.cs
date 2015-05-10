@@ -22,6 +22,17 @@
         }
 
         /// <summary>
+        /// Gets the name of the bet.
+        /// </summary>
+        public override string Name
+        {
+            get
+            {
+                return "Field";
+            }
+        }
+
+        /// <summary>
         /// Gets the payout odds of the bet.
         /// </summary>
         public override int Odds
@@ -40,7 +51,7 @@
         /// <param name="roll">The roll.</param>
         public override void DiceRolled(Roll roll)
         {
-            if (roll.DiceTotal == 3 || 
+            if (roll.DiceTotal == 3 ||
                 roll.DiceTotal == 4 ||
                 roll.DiceTotal == 9 ||
                 roll.DiceTotal == 10 ||

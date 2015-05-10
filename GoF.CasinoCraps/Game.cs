@@ -147,5 +147,10 @@
             round.Reset();
             RoundNumber++;
         }
+
+        public string GetRoundDescription()
+        {
+            return string.Format("Round #{0} - {1}", RoundNumber, round.ToString());
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GoF.CasinoCraps.Game
+namespace GoF.CasinoCraps.UserInterface
 {
     static class Program
     {

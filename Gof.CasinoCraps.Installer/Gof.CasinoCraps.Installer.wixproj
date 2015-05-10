@@ -32,6 +32,14 @@
       <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
       <RefTargetDir>INSTALLFOLDER</RefTargetDir>
     </ProjectReference>
+    <ProjectReference Include="..\GoF.CasinoCraps.UserInterface\GoF.CasinoCraps.UserInterface.csproj">
+      <Name>GoF.CasinoCraps.UserInterface</Name>
+      <Project>{ff029b9a-f643-4e76-a4ca-b673862151c3}</Project>
+      <Private>True</Private>
+      <DoNotHarvest>True</DoNotHarvest>
+      <RefProjectOutputGroups>Binaries;Content;Satellites</RefProjectOutputGroups>
+      <RefTargetDir>INSTALLFOLDER</RefTargetDir>
+    </ProjectReference>
     <ProjectReference Include="..\GoF.CasinoCraps\GoF.CasinoCraps.csproj">
       <Name>GoF.CasinoCraps</Name>
       <Project>{df474de0-d0ea-4ccd-a568-ca2359efbbef}</Project>

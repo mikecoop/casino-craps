@@ -20,6 +20,7 @@
         <Directory Id="ApplicationProgramsFolder" Name="Casino Craps">
           <Component Id="ApplicationShortcut" Guid="*">
             <Shortcut Id="ApplicationStartMenuShortcut" Name="Casino Craps Console" Description="Casino Craps Console Application" Target="[INSTALLFOLDER]CasinoCrapsConsole.exe" WorkingDirectory="INSTALLFOLDER" />
+            <Shortcut Id="ApplicationGameStartMenuShortcut" Name ="Casino Craps" Description="Casino Craps Game" Target="[INSTALLFOLDER]CasinoCraps.exe" WorkingDirectory="INSTALLFOLDER" />
             <RemoveFolder Id="RemoveApplicationProgramsFolder" Directory="ApplicationProgramsFolder" On="uninstall" />
             <RegistryValue Root="HKCU" Key="Software\CasinoCraps" Name="installed" Type="integer" Value="1" KeyPath="yes" />
           </Component>
@@ -36,6 +37,9 @@
       </Component>
       <Component Id="C.GoF.CasinoCraps.ConsoleApp">
         <File Id="F.GoF.CasinoCraps.ConsoleApp" Name="$(var.GoF.CasinoCraps.ConsoleApp.TargetFileName)" Source="$(var.GoF.CasinoCraps.ConsoleApp.TargetPath)" DiskId="1" />
+      </Component>
+      <Component Id="C.GoF.CasinoCraps.UserInterface">
+        <File Id="F.GoF.CasinoCraps.UserInterface" Name="$(var.GoF.CasinoCraps.UserInterface.TargetFileName)" Source="$(var.GoF.CasinoCraps.UserInterface.TargetPath)" DiskId="1" />
       </Component>
       <ComponentRef Id="ApplicationShortcut"/>
     </ComponentGroup>
