@@ -63,7 +63,7 @@ namespace GoF.CasinoCraps
 
         /// <summary>
         /// Gets the payout odds of the bet.
-        /// (Reequirement 3.7.0)
+        /// (Requirement 3.7.0)
         /// </summary>
         public abstract int Odds { get; }
 

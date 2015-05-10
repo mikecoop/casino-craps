@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics.Contracts;
     using System.Linq;
 
     /// <summary>
@@ -52,6 +53,8 @@
         /// <param name="bet">The bet to place.</param>
         public void PlaceBet(Bet bet)
         {
+            Contract.Requires(bet != null);
+
             if (bet.Amount > Money)
             {
                 throw new BetAmountException("Insufficient funds for bet");

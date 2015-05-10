@@ -48,8 +48,9 @@
         {
             // Do nothing.
         }
-        //(Requirement 5.3.0)
-        //(Requirement 5.4.0)
+
+        // (Requirement 5.3.0)
+        // (Requirement 5.4.0)
         private void PrivateRoundEnded(object sender, RoundEndedEventArgs e)
         {
             switch (e.Result)
