@@ -1,15 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Windows.Forms;
-
-namespace GoF.CasinoCraps.UserInterface
+﻿namespace GoF.CasinoCraps.UserInterface
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Reflection;
+    using System.Windows.Forms;
+
+    /// <summary>
+    /// The main form of the application.
+    /// </summary>
     public partial class MainForm : Form
     {
         private readonly Game game;
         private readonly Player player;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MainForm"/> class.
+        /// </summary>
         public MainForm()
         {
             InitializeComponent();
@@ -32,15 +39,18 @@ namespace GoF.CasinoCraps.UserInterface
                            where b.Name.Equals(betName)
                            select b.GetType()).First();
 
-            var betToPlace = ((Bet)Activator.CreateInstance(betType, Convert.ToInt32(betAmountUpDown.Value)));
-
             try
             {
+                var betToPlace = (Bet)Activator.CreateInstance(betType, Convert.ToInt32(betAmountUpDown.Value));
                 player.PlaceBet(betToPlace);
             }
             catch (CrapsException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+            catch (TargetInvocationException ex)
+            {
+                MessageBox.Show(ex.InnerException.Message);
             }
 
             RefreshActiveBets();
