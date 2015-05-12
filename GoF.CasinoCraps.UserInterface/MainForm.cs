@@ -8,6 +8,8 @@
 
     /// <summary>
     /// The main form of the application.
+    /// Because it does not allow players to modify existing bets, it implements:
+    /// (Requirement 2.2.2)
     /// </summary>
     public partial class MainForm : Form
     {
@@ -78,7 +80,7 @@
                 MessageBox.Show(ex.Message);
             }
         }
-        //(Requirement 1.2)
+        //(Requirement 1.2.0)
         private void SetDieImage(PictureBox pictureBox, int dieValue)
         {
             switch (dieValue)

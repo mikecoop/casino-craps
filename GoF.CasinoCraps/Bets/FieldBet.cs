@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents a field bet in craps.
-    /// (Requirement 2.6.13)
+    /// (Requirement 2.6.13.0)
     /// </summary>
     public class FieldBet : Bet
     {

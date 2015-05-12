@@ -6,7 +6,8 @@
 
     /// <summary>
     /// Represents a don't come bet in craps.
-    /// (Requirement 2.5)
+    /// (Requirement 2.5.0)
+    /// (Requirement 2.3.1)
     /// </summary>
     public class DontComeBet : Bet
     {

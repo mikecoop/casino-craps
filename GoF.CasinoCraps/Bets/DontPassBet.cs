@@ -7,6 +7,7 @@ namespace GoF.CasinoCraps
     /// <summary>
     /// Represents a don't pass bet.
     /// (Requirement 2.3.0)
+    /// (Requirement 2.3.1)
     /// </summary>
     public class DontPassBet : Bet
     {

@@ -7,6 +7,7 @@
     /// <summary>
     /// Represents a pass line bet.
     /// (Requirement 2.2.0)
+    /// (Requirement 2.2.1)
     /// </summary>
     public class PassLineBet : Bet
     {

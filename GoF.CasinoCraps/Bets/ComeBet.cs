@@ -6,7 +6,8 @@
 
     /// <summary>
     /// Represents a come bet in craps.
-    /// (Requirement 2.4)
+    /// (Requirement 2.4.0)
+    /// (Requirement 2.2.1)
     /// </summary>
     public class ComeBet : Bet
     {
