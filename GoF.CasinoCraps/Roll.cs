@@ -8,13 +8,12 @@
     /// <summary>
     /// Represents a single roll in a game of casino craps.
     /// (Requirement 1.0.0)
-    /// (Requirement 4.0.0)
     /// </summary>
     public class Roll
     {
         /// <summary>
         /// Random for generating random dice rolls.
-        /// (Requirement 4.1.0)
+        /// (Requirement 1.1.0)
         /// </summary>
         private static readonly Random Random = new Random();
 

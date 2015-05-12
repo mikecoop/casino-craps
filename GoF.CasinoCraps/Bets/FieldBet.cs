@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents a field bet in craps.
-    /// (Requirement 3.6.9)
+    /// (Requirement 2.6.13.0)
     /// </summary>
     public class FieldBet : Bet
     {
@@ -45,8 +45,8 @@
 
         /// <summary>
         /// Notifies the bet that the dice have been rolled.
-        /// (Requirement 3.6.9.1)
-        /// (Requirement 3.6.9.2)
+        /// (Requirement 2.6.13.1)
+        /// (Requirement 2.6.13.2)
         /// </summary>
         /// <param name="roll">The roll.</param>
         public override void DiceRolled(Roll roll)

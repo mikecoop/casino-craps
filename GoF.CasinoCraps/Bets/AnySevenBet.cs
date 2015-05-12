@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents an any seven bet in craps.
-    /// (Requirement 3.6.8)
+    /// (Requirement 2.6.8)
     /// </summary>
     public class AnySevenBet : Bet
     {

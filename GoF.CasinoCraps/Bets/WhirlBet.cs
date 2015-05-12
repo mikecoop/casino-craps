@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a whirl bet in craps.
+    /// (Requirement 2.6.10)
     /// </summary>
     public class WhirlBet : Bet
     {
