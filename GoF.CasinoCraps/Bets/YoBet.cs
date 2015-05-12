@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents a yo bet in craps.
-    /// (Requirement 3.6.3)
+    /// (Requirement 2.6.3)
     /// </summary>
     public class YoBet : Bet
     {

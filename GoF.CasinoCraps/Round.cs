@@ -40,8 +40,8 @@
 
         /// <summary>
         /// Sets the next roll for the round.
-        /// (Requirement 5.6.0)
-        /// (Requirement 5.6.1)
+        /// (Requirement 3.6.0)
+        /// (Requirement 3.6.1)
         /// </summary>
         /// <param name="roll">The next roll to set.</param>
         public void SetNextRoll(Roll roll)

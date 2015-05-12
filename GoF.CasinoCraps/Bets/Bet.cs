@@ -11,8 +11,8 @@ namespace GoF.CasinoCraps
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="Bet"/> class.
-        /// (Requirement 3.2.1)
-        /// (Requirement 3.2.2)
+        /// (Requirement 2.2.1)
+        /// (Requirement 2.2.2)
         /// </summary>
         /// <param name="amount">The amount of the bet.</param>
         public Bet(int amount)
@@ -68,7 +68,6 @@ namespace GoF.CasinoCraps
 
         /// <summary>
         /// Gets the payout odds of the bet.
-        /// (Requirement 3.7.0)
         /// </summary>
         public abstract int Odds { get; }
 

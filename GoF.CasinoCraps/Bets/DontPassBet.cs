@@ -6,7 +6,7 @@ namespace GoF.CasinoCraps
 
     /// <summary>
     /// Represents a don't pass bet.
-    /// (Requirement 3.3.0)
+    /// (Requirement 2.3.0)
     /// </summary>
     public class DontPassBet : Bet
     {
@@ -52,8 +52,8 @@ namespace GoF.CasinoCraps
 
         /// <summary>
         /// Notifies the bet that the round has ended.
-        /// (Requirement 6.2.2)
-        /// (Requirement 6.3.2)
+        /// (Requirement 4.2.2)
+        /// (Requirement 4.3.2)
         /// </summary>
         /// <param name="args">The RoundEndedEventArgs arguments.</param>
         public override void RoundEnded(RoundEndedEventArgs args)

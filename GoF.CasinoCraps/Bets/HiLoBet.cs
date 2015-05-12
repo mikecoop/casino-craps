@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents a hi-lo bet in craps.
-    /// (Requirement 3.6.5)
+    /// (Requirement 2.6.5)
     /// </summary>
     public class HiLoBet : Bet
     {

@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents a C and E bet in craps.
-    /// (Requirement 3.6.7)
+    /// (Requirement 2.6.7)
     /// </summary>
     public class CAndEBet : Bet
     {

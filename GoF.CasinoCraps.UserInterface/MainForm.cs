@@ -56,7 +56,9 @@
             RefreshActiveBets();
             RefreshPlayerMoney();
         }
-
+        //(Requirement 2.1.0)
+        //(Requirement 3.1.0)
+        //(Requirement 4.1.0)
         private void rollDiceButton_Click(object sender, EventArgs e)
         {
             try
@@ -76,7 +78,7 @@
                 MessageBox.Show(ex.Message);
             }
         }
-
+        //(Requirement 1.2)
         private void SetDieImage(PictureBox pictureBox, int dieValue)
         {
             switch (dieValue)

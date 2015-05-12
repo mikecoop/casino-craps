@@ -6,7 +6,7 @@
 
     /// <summary>
     /// Represents a don't come bet in craps.
-    /// (Requirement 3.5)
+    /// (Requirement 2.5)
     /// </summary>
     public class DontComeBet : Bet
     {
@@ -63,8 +63,8 @@
             // Do nothing.
         }
 
-        // (Requirement 5.3.0)
-        // (Requirement 5.4.0)
+        // (Requirement 3.3.0)
+        // (Requirement 3.4.0)
         private void PrivateRoundEnded(object sender, RoundEndedEventArgs e)
         {
             switch (e.Result)

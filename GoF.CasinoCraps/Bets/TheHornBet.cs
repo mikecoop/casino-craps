@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a horn bet in craps.
+    /// (Requirement 2.6.9)
     /// </summary>
     public class TheHornBet : Bet
     {

@@ -6,6 +6,7 @@
 
     /// <summary>
     /// Represents a big six bet in craps.
+    /// (Requirement 2.6.11)
     /// </summary>
     public class BigSixBet : Bet
     {
