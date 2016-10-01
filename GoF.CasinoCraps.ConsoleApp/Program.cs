@@ -10,15 +10,18 @@ namespace GoF.CasinoCraps.ConsoleApp
     {
         static void Main(string[] args)
         {
-            Game game = new Game();
+            ConsoleGame game = new ConsoleGame(new Game(), s =>
+            {
+                Console.WriteLine(s);
+                Console.WriteLine();
+            });
 
             Console.WriteLine("casino craps started - type 'exit' to exit.");
             Console.WriteLine();
             string line;
             while ((line = Console.ReadLine().ToLower()) != "exit")
             {
-                string output = game.Execute(line);
-                Console.WriteLine("--> {0}", output);
+                game.Execute(line);
             }
         }
     }

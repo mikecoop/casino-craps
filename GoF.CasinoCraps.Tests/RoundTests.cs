@@ -121,7 +121,7 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.Craps);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.Craps && args.Roll.DiceTotal == 2));
         }
 
         [Test]
@@ -135,7 +135,7 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.Craps);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.Craps && args.Roll.DiceTotal == 3));
         }
 
         [Test]
@@ -149,7 +149,7 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.Craps);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.Craps && args.Roll.DiceTotal == 12));
         }
 
         [Test]
@@ -176,7 +176,7 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.Natural);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.Natural && args.Roll.DiceTotal == 7));
         }
 
         [Test]
@@ -190,7 +190,7 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.Natural);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.Natural && args.Roll.DiceTotal == 11));
         }
 
         [Test]
@@ -206,7 +206,7 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.SevenOut);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.SevenOut && args.Roll.DiceTotal == 7));
         }
 
         [Test]
@@ -222,7 +222,24 @@ namespace GoF.CasinoCraps.Tests
 
             round.ShouldRaise("RoundEnded")
                 .WithSender(round)
-                .WithArgs<RoundEndedEventArgs>(args => args.Result == RoundResult.PointHit);
+                .WithArgs<RoundEndedEventArgs>(args => (args.Result == RoundResult.PointHit && args.Roll.DiceTotal == 6));
+        }
+
+        [Test]
+        public void Reset_RoundEnded_RoundIsReset()
+        {
+            Round round = new Round();
+
+            round.SetNextRoll(new Roll(8, 1));
+            round.SetNextRoll(new Roll(8, 1));
+
+            round.Phase.Should().Be(RoundPhase.Point);
+            round.PointValue.Should().Be(9);
+
+            round.Reset();
+
+            round.Phase.Should().Be(RoundPhase.ComeOut);
+            round.PointValue.Should().Be(0);
         }
     }
 }

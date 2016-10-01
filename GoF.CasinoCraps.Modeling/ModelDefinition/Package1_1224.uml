@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bc713dbf-7b87-4877-966c-745eec93f561"
+  name="Serialization"
+  visibility="Private" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <referencesInternal>
+    <reference
+      Id="86128650-b691-4b01-8a1c-9698f6644bb0"
+      handle="viewcode://./CodeSchema_Namespace?Namespace%3DSystem.Runtime.Serialization"
+      tag="ViewCode" />
+  </referencesInternal>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c19c8a0d-5bd2-4cd8-bca6-8a27d2060af6"
+        name="SerializationInfo"
+        isAbstract="false"
+        isLeaf="true"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="f35a23ae-8d18-4e44-a1c6-601ffc816277"
+            handle="viewcode://./CodeSchema_Class?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Runtime.Serialization Type%3DSerializationInfo"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="4f1accae-46cf-4f48-8e09-83e41c385548"
+            name="class"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="458b5b45-d132-4b8d-bc62-c74753a26eda">
+                <propertyInstance
+                  Id="ea7baf0c-84e7-4cbd-9cbf-5ca78822a898"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="21e2e1af-8e4c-4cd7-b668-13d21b99fb91">
+                <propertyInstance
+                  Id="49d77ec7-2b96-41cf-93a6-9524a60320e2"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6d8955ce-5a10-4856-9b4a-b9329e7044f9">
+                <propertyInstance
+                  Id="dd33384c-ce8b-4923-a4b9-bfaa16798cae"
+                  name="IsStatic"
+                  value="False" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="5ce8891c-08a1-4e0e-8412-adfea1144b7a">
+                <propertyInstance
+                  Id="2dadae60-e4cc-4ff9-b96f-a89a521ed599"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3cc11895-a271-44f6-858a-6133ceae26e0">
+                <propertyInstance
+                  Id="b632559a-7d29-45e7-940a-11f2e6beee1c"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="be4f9f3b-b342-471e-85ee-4f6f41cfea03"
+        name="StreamingContext"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <referencesInternal>
+          <reference
+            Id="8e5936e6-2a19-4bad-ac3d-44b2e74734fb"
+            handle="viewcode://./CodeSchema_Struct?Assembly%3D&quot;file:%2F%2F%2FC:%2FProgram Files (x86)%2FReference Assemblies%2FMicrosoft%2FFramework%2F.NETFramework%2Fv4.5%2Fmscorlib.dll&quot; Namespace%3DSystem.Runtime.Serialization Type%3DStreamingContext"
+            tag="ViewCode" />
+        </referencesInternal>
+        <appliedStereotypesInternal>
+          <stereotypeInstance
+            Id="b0386d39-9a62-4759-bc94-0041259ed40e"
+            name="struct"
+            profile="CSharpProfile">
+            <propertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="2480e391-3d35-49d6-ac39-3ca11c58cce6">
+                <propertyInstance
+                  Id="6cb84032-50b2-45e0-97fe-f1d42889a161"
+                  name="ClrAttributes" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="6c70fb19-98d0-4864-9323-6f6552d8025d">
+                <propertyInstance
+                  Id="806706ec-15f0-47ee-9119-e65ebf700e7b"
+                  name="IsPartial"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="bd8f5381-de19-4530-a755-c69f169e8301">
+                <propertyInstance
+                  Id="ed405cf6-ff4d-407b-8dfc-27b43d58b458"
+                  name="IsUnsafe"
+                  value="false" />
+              </stereotypeInstanceHasPropertyInstances>
+              <stereotypeInstanceHasPropertyInstances
+                Id="3e492a8e-ac2a-4ba5-a681-87b741b98f23">
+                <propertyInstance
+                  Id="20301fc2-13ec-499d-a3ad-98b9a777e1f7"
+                  name="PackageVisibility"
+                  value="internal" />
+              </stereotypeInstanceHasPropertyInstances>
+            </propertyInstances>
+          </stereotypeInstance>
+        </appliedStereotypesInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+</package>

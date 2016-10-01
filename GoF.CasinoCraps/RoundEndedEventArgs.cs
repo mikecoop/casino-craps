@@ -1,17 +1,33 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace GoF.CasinoCraps
+﻿namespace GoF.CasinoCraps
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+
+    /// <summary>
+    /// Provides data for the <see cref="Round.RoundEnded"/> event.
+    /// </summary>
     public class RoundEndedEventArgs : EventArgs
     {
-        public RoundEndedEventArgs(RoundResult result)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="RoundEndedEventArgs"/> class.
+        /// </summary>
+        /// <param name="result">The result of the round.</param>
+        /// <param name="roll">The last roll of the round.</param>
+        public RoundEndedEventArgs(RoundResult result, Roll roll)
         {
             Result = result;
+            Roll = roll;
         }
 
+        /// <summary>
+        /// Gets the result of the round.
+        /// </summary>
         public RoundResult Result { get; private set; }
+
+        /// <summary>
+        /// Gets the last roll of the round.
+        /// </summary>
+        public Roll Roll { get; private set; }
     }
 }

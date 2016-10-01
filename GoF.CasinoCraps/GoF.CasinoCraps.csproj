@@ -85,6 +85,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bets\BetAmountException.cs" />
+    <Compile Include="Bets\AceDeuceBet.cs" />
+    <Compile Include="Bets\AnyCrapsBet.cs" />
+    <Compile Include="Bets\AnySevenBet.cs" />
+    <Compile Include="Bets\Bet.cs" />
+    <Compile Include="Bets\BetStatus.cs" />
+    <Compile Include="Bets\BoxcarsBet.cs" />
+    <Compile Include="Bets\CAndEBet.cs" />
+    <Compile Include="Bets\HiLoBet.cs" />
+    <Compile Include="Bets\YoBet.cs" />
+    <Compile Include="Bets\DontPassBet.cs" />
+    <Compile Include="Bets\PassLineBet.cs" />
+    <Compile Include="Bets\FieldBet.cs" />
+    <Compile Include="Bets\BigSixBet.cs" />
+    <Compile Include="Bets\BigEightBet.cs" />
+    <Compile Include="Bets\ComeBet.cs" />
+    <Compile Include="Bets\DontComeBet.cs" />
+    <Compile Include="CrapsException.cs" />
+    <Compile Include="IGame.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Roll.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -93,6 +113,9 @@
     <Compile Include="RoundEndedEventArgs.cs" />
     <Compile Include="RoundPhase.cs" />
     <Compile Include="RoundResult.cs" />
+    <Compile Include="Bets\SnakeEyesBet.cs" />
+    <Compile Include="Bets\TheHornBet.cs" />
+    <Compile Include="Bets\WhirlBet.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
